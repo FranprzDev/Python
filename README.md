@@ -17,4 +17,3 @@ Proyectos 'Finales'
 ## ¿Qué puedo revisar?
 
 En este caso, doy total acceso al repositorio para ver TODOS los archivos que haga con este lenguaje de programación y ver mi forma de codear al igual que si es que alguien necesita dejaré documentadas las cosas por si alguien lo necesita para aprender.
-# Aprendiendo Python
