@@ -1,0 +1,6 @@
+Este es un curso de Python de 'ventanas' que estoy tomando en Udemy.
+Usando la librería Tkinter.
+El curso en específico: 
+https://www.udemy.com/course/creacion-de-aplicaciones-e-interfaces-graficas-con-python/
+
+

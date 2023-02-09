@@ -1,0 +1,42 @@
+De dónde aprendí lo básico de Python?
+Lo básico lo vi en el curso de SoyDalto en YouTube de Python.
+
+Link en cuestion:
+https://www.youtube.com/watch?v=nKPbfIU442g&t=21520s&ab_channel=SoyDalto
+
+
+Temario del curso: 
+    Primer "Hola Mundo" en Python
+    Datos simples
+    Variables
+    Datos compuestos
+    Operadores aritméticos
+    Operadores de comparación
+    Condicionales
+    Operadores lógicos
+    Métodos de cadenas
+    Métodos de listas
+    Métodos de diccionarios
+    Entrada de datos (inputs)
+    Variables 2.0
+    Diccionarios 2.0
+    Bucle For
+    Bucle While
+    Funciones integradas
+    Creando funciones propias
+    Funciones Lambda
+    Módulos
+    Enrutamiento de módulos
+    Paquetes
+    Archivos TXT
+    Archivos CSV
+    Trabajando con archivos
+    Trabajando con gráficos
+    Excepciones
+    Expresiones regulares
+    Analizando Expresiones regulares
+    Ejercicio de de Expresiones regulares
+
+Proyectos futuros:
+    - Uso de Expreisones Regulares para poder hacer un traductor con una API que traduzca
+        lo necesario para ciertos archivos en específico.
