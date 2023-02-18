@@ -1,0 +1,1732 @@
+LANGUAGE:
+  command by player: '<red><bold>ERROR <dark_gray>» <white>Este comando debe ser utilizado por un jugador'
+  command by console: '<red><bold>ERROR <dark_gray>» <white>Este comando debe ser utilizado por la <red>CONSOLA'
+  empty chat help: '<red><bold>CLANES <white>» <white>Usa <white>/<white> <mensaje>'
+  disabled world command: '%tag% <white>Los home de los clanes están <white> desactivados <white>en este mundo'
+  white start action: '<red><bold>ERROR <dark_Gray>» <white>Hubo un white al ejecutar esto'
+  white character: '<red><bold>ERROR <dark_gray>» <white>Esto contiene caracteres inválidos'
+  white mod desc: '<red><bold>ERROR <dark_gray>» <white>white al cambiar la descripción del clan'
+  has globalff: '%tag% <white>El fuego amigo global está activo!'
+  no permission: '<red><bold>ERROR <dark_gray>» <white>No tienes permiso para hacer esto'
+  chest extra buyed update: '%tag% <white>%player% <white>ha comprado un nuevo cofre para el clan<white>'
+  region list header: '<white>Lista de regiones:'
+  region list empty: <white> - No hay regiones guardadas
+  region list format: ' <white>%region_name% <white>- %region_creator% <white>- <white>%region_firstpoint%<white>/<white>%region_secondpoint%'
+  region not exists: '%tag% <white>No hay ninguna región con este nombre'
+  region exists: '%tag% <white>Ya existe una región con este nombre'
+  currency vault: Dinero
+  currency playerpoints: Puntos
+  currency clansouls: Almas
+  export same storage: '%tag% <white>Debe elegir un almacenamiento diferente al actual para exportar'
+  export no data: '%tag% <white>Actualmente no hay datos para exportar'
+  export mysql deconfigured: '<red><bold>white <dark_gray>» <white>Ocurrió un white, los campos mysql están mal configurados'
+  export mysql connection error: '<red><bold>ERROR <dark_gray>» <white>Hubo un white al conectarse a MYSQL'
+  export sqlite connection error: '<red><bold>ERROR <dark_gray>» <white>Hubo un white al conectarse a SQLITE'
+  export yaml connection error: '<red><bold>ERROR <dark_gray>» <white>Hubo un white al conectarse a YAML'
+  tag in use: '%tag% <white>Esta etiqueta ya está en uso'
+  clan not found: '%tag% <white>Clan con este ETIQUETA no existe'
+  clan ally header: <white>Lista de aliadoswhite <white>(tag/kdr/members)
+  clan list empty: ' <white>No hay ningún clan en esta lista'
+  clan is your clan: '%tag% <white>Este es tu clan'
+  clan is rival: '%tag% <white>Este Clan ya es un rival'
+  clan already ally: '%tag% <white>Este Clan ya es un aliado'
+  clan dont ally: '%tag% <white>Este Clan no es un aliado'
+  clan player isnot your clan: '%tag% <white>Este jugador no está en tu clan'
+  clan max members: <white>Este Clan ya tiene el número máximo de jugadores
+  clan max members level: '%tag% <white>Este clan ya tiene el número máximo de jugadores para el nivel actual'
+  clan player kicked out: '%tag% <white>Has sido expulsado del clan <white>%clan% <white>por <white>%clan_leader%'
+  clan player kicked outby: '%tag% <white>%player% <white>Ha sido expulsado del clan por <white>%clan_leader%'
+  clan tag equals: '%tag% <white>ETIQUETA sin cambios, parece ser la misma'
+  clan name equals: '%tag% <white>NOMBRE SIN CAMBIAR, parece ser el mismo'
+  clan already rival: '%tag% <white>Este Clan ya es un rival'
+  clan is ally: '%tag% <white>Este Clan ya es un aliado'
+  clan rival white add: '%tag% <white>white al añadir al rival'
+  clan rival white remove: '%tag% <white>white al eliminar el rival'
+  clan dont rival: '%tag% <white>Este Clan no es un rival'
+  clan new ally: '%tag% <white>! <white>Se formó una nueva alianza con el clan <white>%clan_tag%'
+  clan removed ally: '%tag% <white>! <white>La alianza con el clan <white>%clan_tag% <white>se ha eliminado'
+  clan one removed ally: '%tag% <white>! <white>Se ha eliminado una alianza'
+  clan one removed rival: '%tag% <white>! <white>Se ha eliminado a un rival'
+  clan created: '%tag% <white>! <white>Un nuevo clan <white>%clan_tag% <white>ha sido creado por <white>%player%<white>'
+  clan deleted: '%tag% <white>! <white>El Clan <white>%clan_tag% <white>fue eliminado por <white>%player%<white>'
+  clan deleted small: <white><strikethrough>Eliminado
+  clan ff changed: '%tag% <white>! <white>El fuego amigo es <white>%value%<white>'
+  clan globalff changed: '%tag% <white>! <white>El fuego amigo global es <white>%value%<white>'
+  clan new join: '%tag% <white>! <white>El jugador <white>%player% <white>entró en el clan'
+  clan new kick: '%tag% <white>! <white>El jugador <white>%player% <white>fue expulsado del Clan'
+  clan new leave: '%tag% <white>! <white>El jugador <white>%player% <white>salío del <white>Clan <white>%clan_tag%<white>'
+  clan new rival: '%tag% <white>! <white>Nueva rivalidad con el Clan <white>%clan_tag%'
+  clan new rival removed: '%tag% <white>! <white>La rivalidad con el clan <white>%clan_tag% <white>se ha disuelto'
+  clan new leader: '%tag% <white>! <white>El nuevo líder del clan <white>%clan_tag% <white>es <white>%player%'
+  clan rival removed: '%tag% <white>! <white>La rivalidad con el Clan <white>%clan_tag% <white>ha sido eliminada'
+  clan verify changed: '%tag% <white>! <white>El clan fue cambiado a <white>%value%<white>'
+  clan new promote: '%tag% <white>! <white>El jugador <white>%player% <white>ha ascendido'
+  clan new demote: '%tag% <white>! <white>El jugador <white>%player% <white>fue degradado'
+  clan tag whitelist: '%tag% <white>Esta etiqueta no se puede usar en los clanes'
+  clan changed settings: '%tag% <white>Se ha cambiado la configuración del clan'
+  clan settings warinvite: <white> Invitación de guerra
+  clan settings allysharedchat: <white> Chat aliado compartido
+  clan settings joinleave: <white> Únirse y salir
+  clan settings allysharedhome: <white>Home aliado compartido
+  clan settings clanff: <white>Clan FF
+  clan settings membermanagerhomes: <white> Miembro administrar hogares
+  clan settings membermanagerwars: <white> Miembro administrar guerras
+  clan settings opened: <white> Clan abierto a todos
+  clan delete error gui: <red><bold>ERROR <dark_gray>» <white>¡Error al eliminar!
+  clan no actions: '%tag% <white>No hay acciones pendientes para cancelar'
+  clan sign create: =CLAN TAG ARRIBA=
+  clan sign desc: ===DESC ARRIBA===
+  clan sign invite: =NICKNAME ARRIBA=
+  clan point reason level change: Cambio de nivel de clan
+  clan point reason quest finished: Misión terminada %uclans_quest_finished%
+  clan point reason no reason: Sin Razón
+  help uclan header: '<white>Ayuda para el administrador del clan:'
+  help clan header: '<white>Ayuda con el clan:'
+  help info header: '<white>Información del clan <white>%clan_tag%<white>:'
+  help info empty: <white>Nada aquí
+  help clanlist: '<white>Lista de clanes: <white>(rank/tag/desc/kdr/members)'
+  help clanlist subheader: ' <white>Mostrar %cur%/%amount% de %total% (Página: %pag_cur%/%pag_max%)'
+  help profile header: '<white>Perfil de <white>%player%<white>:'
+  help rival header: <white>Lista de rivales <white>(tag/kdr/members)
+  help stats header: '<white>Estado del clan <white>%clan_tag%<white>:'
+  help stats format player: '  <white>%list_player% <white>- <white>%list_player_role% <white>- <white>%list_player_kills%<white>/<white>%list_player_deaths% <white>(%list_player_kdr%) <white>[%list_player_seen_date%]'
+  translaction players: Jugadores
+  translaction is on: <white>En línea
+  translaction is off: <white>Desconectado
+  translaction yes: <white>SI
+  translaction no: <white>NO
+  clan dont leader: '%tag% <white>No eres el líder del clan'
+  clan dont permission top demote: '%tag% <white>No puedes degradar jugadores'
+  clan dont permission top promote: '%tag% <white>No puedes promover jugadores'
+  player no invitation: '%tag% <white>No tienes invitaciones'
+  clan dont mod and leader: '%tag% <white>No eres el líder o moderador del clan'
+  clan dont mod and leader gui: <white>Necesitas ser <white>Líder <white>o <white>Mod<white>!
+  player dont mod: '%tag% <white>Este jugador no es moderador'
+  player is mod: '%tag% <white>Este jugador ya es moderador'
+  player offline: '%tag% <white>¡El jugador está desconectado o no existe!'
+  player cannot expel leader: '%tag% <white>No puedes expulsar al Líder del Clan'
+  player cannot expel mod: '%tag% <white>Un moderador no puede expulsar a otro del mismo cargo'
+  player is clan leader: '%tag% <white>Eres el líder del clan, para borrar, usa <white>/clan disband<white> y borrarás el Clan'
+  you donthave clan: '%tag% <white>No tienes un clan'
+  player donthave clan: '%tag% <white>Este jugador no tiene clan'
+  player have clan: '%tag% <white>Ya tienes un clan'
+  player has clan: '%tag% <white>Este jugador ya tiene un clan'
+  player is you: '%tag% <white>Este jugador eres tu'
+  player dont have money: '%tag% <white>Necesitas <white>%uclans_money_currency%%amount% <white>para esto'
+  player dont have money gui: <white>Necesitas <white>%uclans_money_currency%%amount%
+  player debited money: '%tag% <white>Se te ha cobrado <white>%amount% <white>de tu cuenta'
+  player deposited money: '%tag% <white>%uclans_money_currency%%amount% <white>ha sido depositado en tu cuenta'
+  player invitation player expired: '%tag% <white>Su invitación de jugador ha caducado y no ha habido respuesta'
+  player invitation expired: '%tag% <white>Tu invitación para unirte al clan <white>%clan_tag% <white>eha expirado'
+  player invitation daniel: '%tag% <white>El jugador negó la invitación'
+  player already invited: '%tag% <white>¡Ya hay una invitación para este jugador en curso!'
+  player already invited gui: <white>Invitación para jugador en progreso!
+  player invitation error: '<red><bold>ERROR <dark_gray>» <white>Hubo un white al enviar la invitación'
+  player invitation white gui: <red><bold>white <dark_gray>» white al enviar la invitación
+  player invitation success: '%tag% <white>La invitación fue enviada con éxito'
+  player invitation success gui: <white>Invitación enviada con éxito!
+  gui error: '<red><bold>ERROR <dark_gray>» <white>Este menú contiene un white y no se puede abrir'
+  player teleport dont move: '%tag% <white>Preparando el teletransporte, no te muevas %sec% seg'
+  player teleport moved: '%tag% <white>¡Te moviste y el teletransporte fue cancelado!'
+  player teleport true: '%tag% <white>¡Fuiste teletransportado!'
+  player teleport false: '%tag% <white>¡No te han teletransportado por ningún white!'
+  unknown error: '<red><bold>ERROR <dark_gray>» <white>Se produjo un white desconocido con esto, ¡inténtelo de nuevo!'
+  nothing here: <white>Nada aquí<white>
+  clan empty name: <white>¡Sin nombre!
+  clan empty desc: <white>¡Sin descripción!
+  json advanced action create: '%tag% <white>¡Escribe en el chat el nombre del nuevo clan que deseas crear o usar <white>/clan cancel <reset><white>para cancelar!'
+  json advanced action disband: '%tag% <white>¡Escribe <white>%confirm_action% <reset><white>en el chat para confirmar o usar <white>/clan cancel <reset><white>para cancelar!'
+  json advanced action changeleder: '%tag% <white>¡Escribe <white>%confirm_action% <reset><white>en el chat para confirmar o usar <white>/clan cancel <reset><white>para cancelar!'
+  json advanced action modtag: '%tag% <white>¡Escribe en el chat la nueva ETIQUETA del clan o usa <white>/clan cancel <reset><white>para cancelar!'
+  json advanced action desc: '%tag% <white>¡Escribe en el chat la descripción del nuevo clan o usa <white>/clan cancel <reset><white>para cancelar!'
+  json advanced action name: '%tag% <white>¡Escribe en el chat el nombre del nuevo clan o usa <white>/clan cancel <reset><white>para cancelar!'
+  json advanced action invite: '%tag% <white>¡Escribe en el chat a quién quieres invitar al clan o usa <white>/clan cancel <reset><white>para cancelar!'
+  json simple invite received: ' <white>! <white>Has recibido una invitación para unirte al clan <white>%clan_tag%<white>, la invitación caduca en <white>%sec_expires% seg<white> <white>Usa <white>/clan join %clan_tag_nocolor% <white>o <white>/clan deny %clan_tag_nocolor%'
+  json advanced help pagination: ' <white>Para seguir usa: <white>/clan help [página]'
+  json simple command unknown: '%tag% <white>Comando desconocido, usa <white>/uclan help <white>para ver la lista de comandos disponibles'
+  json simple command unknown player: '%tag% <white>Comando desconocido, usa <white>/clan help <white>para ver la lista de comandos disponibles'
+  json simple clan ally rival list format: ' <white>%clan_tag% <white>- <white>%clan_kdr% <white>- <white>%clan_members_count%'
+  json simple clan list format: ' <white>%clan_rank% <white>- <white>%clan_tag% <white>- <white>%clan_desc% <white>- <white>%clan_kdr% <white>- <white>%clan_members_count%'
+  json simple list next: ' <white> Página siguiente >>'
+  json simple list prev: ' << <white> Página anterior'
+  json simple list controler: ' << <white> Página anterior'
+  json simple clan deleted: ' <white>%clan_rank% <white>- <white><strikethrough>Clan eliminado!'
+  disabled function: '%tag% <white>Esta función/addon parece estar desactivado'
+  admin opened clanchest: '%tag% <white>Un administrador abrió el cofre del clan'
+  top kdr format: '<white>%num% <white>| <white>%uclans_tag_color% <white>| <white>Kdr: <white>%uclans_clan_kdr%'
+  top kill format: '<white>%num% <white>| <white>%uclans_tag_color% <white>| <white>Asesinatos: <white>%uclans_clan_kills%'
+  top death format: '<white>%num% <white>| <white>%uclans_tag_color% <white>| <white>Muertes: <white>%uclans_clan_deaths%'
+  top member format: '<white>%num% <white>| <white>%uclans_tag_color% <white>| <white>Miembros: <white>%uclans_count_members%'
+  top bank format: '<white>%num% <white>| <white>%uclans_tag_color% <white>| <white>Banco: <white>%uclans_bank_balance%'
+  top level format: '<white>%num% <white>| <white>%uclans_tag_color% <white>| <white>Nvl: <white>%uclans_level%'
+  top war format: <white>%num% <white>| <white>%uclans_tag_color% <white>| <white>%uclans_clan_war_win%<white>/<white>%uclans_clan_war_lose%
+  clan new balance: '%tag% <white>El nuevo balance del banco es <white>%uclans_money_currency%%uclans_bank_balance%<white>, cambiado por <white>%uclans_player%'
+  clan quest change: '%tag% <white>Los puntos de invitado del clan son <white>%uclans_quest_points%<white>, Total terminado <white>%uclans_quest_finished%'
+  player reseted kdr: '%tag% <white>Al jugador <white>%player% <white>se le ha reiniciado su KDR!'
+  clan reseted kdr: '%tag% <white>Al clan <white>%uclans_tag_color% <white>se le ha reiniciado su KDR!'
+  value greater than zero: '%tag% <white>El valor debe ser mayor que cero'
+  clan level change: '%tag% <white>El <white>clan <white>%clan% es ahora nivel <white>%num%'
+  clan not have levels: '%tag% <white>El clan no tiene suficientes niveles para eliminar'
+  clan has only levels: '%tag% <white>El clan solo tiene <white>%num% <white>niveles'
+  command in cooldown: '%tag% <white>Espera <white>%sec% <white>segwhite para usar este comando de nuevo'
+  white length: '%tag% <white>El valor debe tener un tamaño entre <white>%min% <white>y <white>%max%'
+  kits list header: '<white>Lista de Kit:'
+  kits list empty: ' <white>- No hay kits para mostrar'
+  kits list format: ' <white>%kit_name% <white>- <white>%kit_desc% <white>- <white>Fecha: <white>%kit_creation_date%'
+  kit not exists: '%tag% <white>No hay ningún kit con este nombre'
+  kit already exists: '%tag% <white>Ya existe un kit con este nombre'
+  empty inventory: '%tag% <white>Tu inventario no puede estar vacío'
+  state true: <white>ACTIVADO
+  state false: <white>DESACTIVADO
+  accept type: '%tag% <white>El tipo no es válido, utilice: <white>%types%'
+  clan regroup invite expired: '%tag% <white>La invitación para reagruparse ha expirado!'
+  clan regroup invite doesnot exists: '%tag% <white>No se ha enviado ninguna solicitud de reagrupamiento'
+  clan regroup invite already exists: '%tag% <white>Ya se envió una solicitud de reagrupamiento'
+  clan regroup invite deny: '%tag% <white>El jugador <white>%player% <white>rechazó su solicitud!'
+  clan regroup invite accept: '%tag% <white>El jugador <white>%player% <white>aceptó tu solicitud!'
+  clan regroup invite already denied: '%tag% <white>Ya denegaste la solicitud'
+  clan regroup invite already accepted: '%tag% <white>Ya aceptó la solicitud'
+  clan has no members: '%tag% <white>Tu clan no tiene miembros'
+  disabled world regroup: '%tag% <white>No puedes enviar solicitudes de reagrupamiento en este mundo'
+  disabled region regroup: '%tag% <white>No puede enviar solicitudes de reagrupamiento en esta región'
+  disabled region command: '%tag% <white>No puede utilizar estos comandos en esta región'
+  clan rival remove already invited: '%tag% <white>Ya hay una solicitud de paz de tu clan o otro clan en curso para este clan, espere y vuelva a intentarlo!'
+  clan rival remove error: '<red><bold>ERROR <dark_gray>» <white>Hubo un white al enviar la solicitud!'
+  clan rival remove moderation offline: '%tag% <white>No hay moderadores ni líderes en línea en el otro clan'
+  clan rival remove sended: '%tag% <white>Solicitud de paz enviada, espera a que el clan acepte o rechace'
+  clan rival remove not found: '%tag% <white>No hay peticiones de paz'
+  clan rival remove deny: '%tag% <white>Negaste la solicitud para eliminar la rivalidad'
+  clan rival remove deny received: '%tag% <white>El otro clan negó la solicitud de paz'
+  clan rival remove expired: '%tag% <white>La invitación a la paz ha expirado!'
+  clan ally invite not found: '%tag% <white>No hay invitaciones para aliados'
+  clan ally invite deny: '%tag% <white>Has negado la invitación a la alianza'
+  clan ally invite already invited: '%tag% <white>Ya hay una invitación de tu clan o otro clan en progreso para este clan, ¡espera y vuelve a intentarlo!'
+  clan ally invite error: '<red><bold>ERROR <dark_gray>» <white>¡Hubo un white al enviar la solicitud!'
+  clan ally invite moderation offline: '%tag% <white>No hay moderadores ni líderes en línea en el otro clan'
+  clan ally invite sended: '%tag% <white>Invitación enviada, espera a que el clan acepte o rechace'
+  clan ally invite expired: '%tag% <white>¡La invitación a la alianza ha expirado!'
+  clan ally invite deny received: '%tag% <white>El otro clan negó la solicitud de alianza'
+  clan not have points: '%tag% <white>El clan no tiene puntos para quitar'
+  clan has only points: '%tag% <white>El clan solo tiene <white>%num% <white>puntos'
+  clan ally in limit: '%tag% <white>Tu clan ha alcanzado el límite de aliados y necesita ganar niveles para desbloquear más aliadoswhite El límite actual de tu clan es <white>%uclans_limit_ally%'
+  clan rival in limit: '%tag% <white>Tu clan ha alcanzado el límite de rivales y necesita ganar niveles para desbloquear más rivaleswhite El límite actual de tu clan es <white>%uclans_limit_rival%'
+  command deprecated: '%tag% <white>Este comando ha quedado obsoleto y se puede eliminar de la configuración'
+  chan does not exists: '%tag% <white>Este clan no existe'
+  need level min: '%tag% <white>Tu clan debe tener al menos <white>%level% <white>niveles para esto!'
+  disabled region chest: '%tag% <white>No puedes usar cofres en esta región'
+  player_leave: '%tag% <white>El miembro <white>%player% <white>se ha desconectado'
+  player_join: '%tag% <white>El miembro <white>%player% <white>acaba de unirse'
+  home already exists: '%tag% <white>Ya hay un home con este nombre'
+  home create error: '<red><bold>ERROR <dark_gray>» <white>Hubo un white al crear el home'
+  home create success: '%tag% <white>¡Home nuevo creado con éxito!'
+  home no exists: '%tag% <white>No hay home con ese nombre'
+  home no exists gui: <white>Este home tiene un white
+  home delete error: '<red><bold>ERROR <dark_gray>» <white>Hubo un white al eliminar'
+  home delete white gui: <white>Hubo un white al eliminar
+  home delete success: '%tag% <white>¡El home se ha eliminado correctamente!'
+  home delete success gui: <white>¡Se ha eliminado con éxito!
+  new create home: '%tag% <white>Se ha creado un nuevo home de clan en el servidor <white>%server% <white>con el nombre <white>%name%'
+  home removed: '%tag% <white>El home <white>%name% <white>del servidor <white>%server% <white>del clan se ha eliminado'
+  disabled region home: '%tag% <white>Los home de los clanes están desactivados en esta región'
+  home limit: <white>Este es el límite (%limit%) para tu Clan!
+  home limit reached: '%tag% <white>El límite para tu clan es %homes% homes<white>'
+  new point received: '%tag% <white>Tu clan recibió <white>%points% puntos<white>, y ahora tiene <white>%totalpoints% puntos  (%reason%)'
+  new point removed: '%tag% <white>Tu clan perdió <white>%points% puntos<white>, y ahora tiene <white>%totalpoints% points  (%reason%)'
+  new point set: '%tag% <white>Tus puntos de clan se han cambiado a <white>%totalpoints% puntos  (%reason%)'
+  clan player skin in update gui: <white>Actualizando skin, espera
+  clan player skin in update: '%tag% <white>Actualizando la skin, espere, ya que esto puede llevar algún tiempo'
+  clan player blocked invite gui: <white>Este jugador ha deshabilitado las invitaciones del clan
+  clan player blocked invite: '%tag% <white>Invitaciones deshabilitadas para el jugador'
+  clan player isalready banned: '%tag% <white>Este jugador ya está baneado del Clan'
+  clan player isnot banned: '%tag% <white>Este jugador no está baneado en el clan'
+  clan player is banned: '%tag% <white>Este jugador está baneado del clan y no puede recibir invitaciones'
+  clan player is banned gui: <white>El jugador está baneado del clan
+  clan player white unban: '%tag% <white>Hubo un white al desbanear a este jugador'
+  clan player white unban gui: <white>white al desbanear al jugador
+  clan player white ban: '%tag% <white>Hubo un white al banear a este jugador'
+  clan player white ban gui: <white>white al banear al jugador
+  clan player success ban: '%tag% <white>El jugador ha sido baneado con éxito del clan'
+  clan player success ban gui: <white>El jugador ha baneado con éxito
+  clan player success unban: '%tag% <white>El jugador ha sido desbaneado con éxito del clan'
+  clan player success unban gui: <white>El jugador ha desbaneado con éxito
+  clan player are banned: '%tag% <white>Estás baneado de este Clan y no puedes unirte a los miembros'
+  clan player white change nickname: '%tag% <white>white al cambiar el apodo'
+  clan player white change nickname gui: <white>white al cambiar el apodo
+  clan player changed nickname: '%tag% <white>¡Apodo cambiado con éxito!'
+  clan player changed nickname gui: <white>¡Apodo cambiado con éxito!
+  clan player nickname default: '%tag% <white>Tu apodo ya es el predeterminado'
+  clan player nickname default gui: <white>Tu apodo ya es el predeterminado
+  clan reward level: '%tag% <white>Obtuviste recompensas por alcanzar el nivel de tu clan %num%'
+  clan changed settings gui: <white>Se han cambiado los ajustes
+  clan create error: '<red><bold>ERROR <dark_gray>» <white>Hubo un white al crear'
+  clan create success: '%tag% <white>¡Nuevo clan creado con éxito!'
+  home create success gui: <white>¡Nuevo Home creado!
+  separer: <gradient:<white>:<white>████████████████████████████████</gradient>
+  clan settings publichomes: <white> Homes as public
+  clan actions expired: '%tag% <white>The time for action is over'
+  help admin pagination prev: <click:run_command:"/uclan help %page%"><hover:show_text:'<white>Click to go backwhite'><white><< Anterior</hover></click>
+  help admin pagination next: <click:run_command:"/uclan help %page%"><hover:show_text:'<white>Click to advancewhite'><white>Siguiente >></hover></click>
+  help admin pagination separer: <white>|
+  help player pagination prev: <click:run_command:"/clan help %page%"><hover:show_text:'<white>Click to go backwhite'><white><< Anterior</hover></click>
+  help player pagination next: <click:run_command:"/clan help %page%"><hover:show_text:'<white>Click to advancewhite'><white>Siguiente >></hover></click>
+  help player pagination separer: <white>|
+  disabled function gui: <white>This function is turned off
+  home name without space: '%tag% <white>Name cannot contain spaces'
+  translaction kill: Kill
+  translaction death: Death
+  translaction kdr: KDR
+  translaction member: Member
+  translaction bank: Bank
+  translaction level: Level
+  translaction war: War
+  translaction all: All
+  translaction point: Point
+  top point format: '<white>%num%: <white>| <white>%uclans_tag_color% <white>| <white>Point: <white>%uclans_points%'
+ 
+# TRANSLATIONS OF GUI MENU FILES
+ 
+GUI:
+  General disband_confirm title: <white>¡Confirmas la eliminación del Clan?
+  General disband_confirm items fill name: ' '
+  General disband_confirm items fill lore: [
+    ]
+  General disband_confirm items confirm name: <white>Confirmar
+  General disband_confirm items confirm lore:
+  - ''
+  - ' <white>Click para confirmar'
+  General disband_confirm items cancel name: <white>Cancelar
+  General disband_confirm items cancel lore:
+  - ''
+  - ' <white>Click para cancelar'
+  General changeleader_confirm title: <white>¡Confirmar el cambio de líder del clan?
+  General changeleader_confirm items fill name: ' '
+  General changeleader_confirm items fill lore: [
+    ]
+  General changeleader_confirm items confirm name: <white>Confirmar
+  General changeleader_confirm items confirm lore:
+  - ''
+  - ' <white>Click para confirmar'
+  General changeleader_confirm items cancel name: <white>Cancelar
+  General changeleader_confirm items cancel lore:
+  - ''
+  - ' <white>Click para cancelar'
+  Home clan_home title: <white>El home del clan
+  Home clan_home items fill name: ' '
+  Home clan_home items fill lore: [
+    ]
+  Home clan_home items ally_homes name: <white>Ver home de Aliados
+  Home clan_home items ally_homes lore:
+  - ''
+  - ' <white>Click para abrir'
+  Home clan_home items create name: <white>Crear un nuevo home
+  Home clan_home items create lore:
+  - ''
+  - ' <white>Click para crear'
+  Home clan_home items back name: <white>Regresar
+  Home clan_home items back lore:
+  - ''
+  - ' <white>Click para volver'
+  Home clan_home items next name: <white>Siguiente página
+  Home clan_home items next lore:
+  - ''
+  - ' <white>Click para continuar'
+  Home clan_home items previous name: <white>Página anterior
+  Home clan_home items previous lore:
+  - ''
+  - ' <white>Click para volver'
+  Home clan_home items current name: <white>Home %uclans_home:<num>:name%
+  Home clan_home items current lore:
+  - ''
+  - ' <white>Información del home'
+  - ' <white>'
+  - ' <white>Servidor: <white>%uclans_home:<num>:server%'
+  - ' <white>Nombre: <white>%uclans_home:<num>:name%'
+  - ''
+  - ' <white>Click izquierdo para teletransportarte '
+  - ' <white>Click derecho para eliminar'
+  Home clan_delhome_confirm title: <white>¡Confirmar eliminación del home <white>%home_name% <white>?
+  Home clan_delhome_confirm items fill name: ' '
+  Home clan_delhome_confirm items fill lore: [
+    ]
+  Home clan_delhome_confirm items confirm name: <white>Click para confirmar
+  Home clan_delhome_confirm items confirm lore:
+  - ' '
+  - ' <white>Haz click para confirmar'
+  Home clan_delhome_confirm items cancel name: <white>Click para cancelar
+  Home clan_delhome_confirm items cancel lore:
+  - ' '
+  - ' <white>Haz click para cancelar'
+  General noclan_home title: <white>Clan <white>| <white>Sin clan
+  General noclan_home items fill name: ' '
+  General noclan_home items fill lore: [
+    ]
+  General noclan_home items fill2 name: ' '
+  General noclan_home items fill2 lore: [
+    ]
+  General noclan_home items commands name: <white>Lista de comandos y ayuda
+  General noclan_home items commands lore:
+  - ' <white>Click para ver la lista completa'
+  - <white>de comandos para clanes y tierras
+  General noclan_home items clans name: <white>Todos los clanes
+  General noclan_home items clans lore:
+  - ' <white>Click para abrir el menú de la lista de clanes'
+  General noclan_home items create name: <white>No tienes un clan
+  General noclan_home items create lore:
+  - ' <white>Click para crear un clan'
+  General noclan_home items profile name: <white>Tu Perfil
+  General noclan_home items profile lore:
+  - ' <white>Click para abrir tu perfil'
+  General clan_home title: <white>Menu del clan
+  General clan_home items fill name: ' '
+  General clan_home items fill lore: [
+    ]
+  General clan_home items fill2 name: ' '
+  General clan_home items fill2 lore: [
+    ]
+  General clan_home items info name: <white>Clan %uclans_tag_color%
+  General clan_home items info lore:
+  - ' <white>Información del clan'
+  - ' <white>'
+  - ' <white>Nivel de clan: <white>%uclans_level%'
+  - ' <white>Puntos de clan: <white>%uclans_points%'
+  - ' <white>Banco: <white>%uclans_money_currency%%uclans_bank_balance%'
+  - ' <white>'
+  - ' <white>Etiqt: <white>%uclans_tag_color%'
+  - ' <white>Desc: <white>%uclans_desc_color%'
+  - ' '
+  - ' <white>Click para abrir una lista de estado'
+  General clan_home items banner name: <white>Estandarte de Clan
+  General clan_home items banner lore:
+  - ' '
+  - ' <white>Información del estandarte:'
+  - ''
+  - ' <white>Tiene estandarte: <white>%uclans_hasbanner_formated%'
+  - ' '
+  - ' <white>El estandarte del clan es tu marca'
+  - <white>y tu <white> NEXUS <white>utilizado para la señalización de la tierra!
+  - ' <white>Solo el líder o los moderadores pueden'
+  - <white>editar el estandarte del clan
+  General clan_home items clans name: <white>Aliados de clan
+  General clan_home items clans lore:
+  - ' <white>Click para abrir el menú de lista de clanes'
+  General clan_home items commands name: <white>Lista de comandos y ayuda
+  General clan_home items commands lore:
+  - ' <white>Click para ver la lista completa'
+  - <white>de comandos para clanes y tierras
+  General clan_home items settings name: <white>Configuración del clan
+  General clan_home items settings lore:
+  - ' <white>Click para abrir'
+  General clan_home items home name: <white>Abrir menú del home
+  General clan_home items home lore:
+  - ' <white>Click para abrir'
+  General clan_home items ally name: <white>Alianzas
+  General clan_home items ally lore:
+  - ' '
+  - ' <white>Aliados: <white>%uclans_clan_count_ally%'
+  - ' '
+  - ' <white>Click para abrir el menú de alianzas'
+  General clan_home items rival name: <white>Rivales
+  General clan_home items rival lore:
+  - ' '
+  - ' <white>Rivales: <white>%uclans_clan_count_rival%'
+  - ' '
+  - ' <white>Click para abrir el menú de rivales'
+  General clan_home items members name: <white>Miembros del clan
+  General clan_home items members lore:
+  - ' '
+  - ' <white>Miembros: <white>%uclans_count_members%'
+  - ' '
+  - ' <white>Click para abrir el menú de miembros'
+  General player_profile title: <white>Perfil de <white>| <white>%uclans_player%
+  General player_profile items head name: <white>%uclans_player%
+  General player_profile items head lore:
+  - ''
+  - ' <white>Clan: <white>%uclans_tag_color%'
+  - ' <white>Líder: <white>%uclans_leader%'
+  - ' '
+  - ' <white>Nickname: <white>%uclans_player%'
+  - ' <white>Kdr: <white>%uclans_player_kills%<white>/<white>%uclans_player_deaths% <white>(%uclans_player_kdr%)'
+  - ' <white>Entró: <white>%uclans_player_joindate_formated%'
+  - ' <white>Ultima vez visto: <white>%uclans_player_lastsee_formated%'
+  General player_profile items back name: <white>Regresa a tu home
+  General player_profile items back lore:
+  - ' <white>Click para volver a tu home'
+  General player_profile items fill name: ' '
+  General player_profile items fill lore: [
+    ]
+  General clan_stats title: <white>Estadisticas <white>| %uclans_tag_color%
+  General clan_stats items fill name: ' '
+  General clan_stats items fill lore: [
+    ]
+  General clan_stats items back name: <white>Regresar
+  General clan_stats items back lore:
+  - ' <white>Click para volver'
+  General clan_stats items limits name: '<white>Límites del clan:'
+  General clan_stats items limits lore:
+  - ' '
+  - '<white>Acerca de los límites:'
+  - ' '
+  - ' <white>Homes: <white>%uclans_limit_home%'
+  - ' <white>Aliados: <white>%uclans_limit_ally%'
+  - ' <white>Rivales: <white>%uclans_limit_rival%'
+  - ' <white>Espacios: <white>%uclans_slots_total%'
+  - ' '
+  - ' <white>Los límites se incrementan a medida que'
+  - <white>el clan gana niveles
+  General clan_stats items member_rival_ally name: '<white>Miembros, rivales y aliados:'
+  General clan_stats items member_rival_ally lore:
+  - ' '
+  - '<white>Sobre miembros, rivales y aliados:'
+  - ' '
+  - ' <white>Miembros: <white>%uclans_count_members%'
+  - ' <white>Miembros en línea: <white>%uclans_count_onlinemembers%'
+  - ' <white>Aliados: <white>%uclans_clan_count_ally%'
+  - ' <white>Rivales: <white>%uclans_clan_count_rival%'
+  General clan_stats items others name: '<white>Otras stats:'
+  General clan_stats items others lore:
+  - ' '
+  - '<white>Otros:'
+  - ' '
+  - ' <white>Miembros que se han unido: <white>%uclans_clan_member_joined%'
+  - ' <white>Miembros que se han salido: <white>%uclans_clan_member_leave%'
+  - ' <white>Miembros expulsados: <white>%uclans_clan_member_kicked%'
+  - ' <white>Cambios de etiqueta: <white>%uclans_clan_tag_changed%'
+  General clan_stats items status name: '<white>Estado:'
+  General clan_stats items status lore:
+  - ' '
+  - '<white>Sobre el estado:'
+  - ' '
+  - ' <white>Banco: <white>%uclans_money_currency%%uclans_bank_balance%'
+  - ' <white>Almas: <white>%uclans_money_currency%%uclans_clan_souls%'
+  - ' <white>Nivel: <white>%uclans_level%'
+  - ' <white>Nivel máximo alcanzado: <white>%uclans_max_level_reached%'
+  - ' <white>Puntos de clan: <white>%uclans_points%'
+  - ' <white>Desafío finalizado: <white>%uclans_quest_finished%'
+  General clan_stats items war name: '<white>Stats de Guerra:'
+  General clan_stats items war lore:
+  - ' '
+  - '<white>Sobre las guerras:'
+  - ' '
+  - ' <white>Guerras ganadas: <white>%uclans_clan_war_win%'
+  - ' <white>Guerras perdidas: <white>%uclans_clan_war_lose%'
+  - ' <white>Guerras total: <white>%uclans_clan_war_total%'
+  General clan_stats items kdr name: '<white>KDR:'
+  General clan_stats items kdr lore:
+  - ' '
+  - '<white>Sobre kdr:'
+  - ' '
+  - ' <white>Asesinatos: <white>%uclans_clan_kills%'
+  - ' <white>Muertes: <white>%uclans_clan_deaths%'
+  - ' <white>Kdr Total: <white>%uclans_clan_kdr%'
+  General clan_stats items banner name: <white>Estandarte de clan
+  General clan_stats items banner lore:
+  - ' '
+  - ' <white>Información del estandarte:'
+  - ''
+  - ' <white>Tiene estandarte: <white>%uclans_hasbanner_formated%'
+  General clan_stats items foundation name: '<white>Fundación:'
+  General clan_stats items foundation lore:
+  - ' '
+  - '<white>Sobre la fundación:'
+  - ' '
+  - ' <white>Líder: <white>%uclans_leader%'
+  - ' <white>Fecha de creación: <white>%uclans_creation_date_formated%'
+  - ' <white>Está verificado: <white>%uclans_verified%'
+  - ' <white>Espacios: <white>%uclans_slots% <white>(+%uclans_slots_extra%)'
+  - ' <white>Abrir a todos: <white>%uclans_isopen_formated%'
+  - ' '
+  - ' <white>Moderadores (%uclans_count_moderators%):'
+  - '  <white>%uclans_moderators%'
+  General clan_stats items members name: '<white>Lista de Miembros:'
+  General clan_stats items members lore:
+  - ' '
+  - ' <white>Members: <white>%uclans_count_members%'
+  - ''
+  - ' <white>Click para abrir'
+  General clan_settings title: <white>Menú de configuración
+  General clan_settings items fill name: ' '
+  General clan_settings items fill lore: [
+    ]
+  General clan_settings items back name: <white>Regresar
+  General clan_settings items back lore:
+  - ' <white>Click para volver'
+  General clan_settings items actions name: <white>Acciones
+  General clan_settings items actions lore:
+  - ' <white>Click para abrir'
+  General clan_settings items delete name: <white>Eliminar el clan
+  General clan_settings items delete lore:
+  - ' <white>Click para eliminar el clan'
+  - ' <white>Solo el Líder puede hacer esto!'
+  - ' <white>Esto eliminará la protección de tu tierra'
+  - ' <white>Esto requiere confirmación en CHAT!'
+  - ' '
+  - ' <white>Atención, esta acción no se puede deshacer!'
+  General clan_settings items join_leave name: <white>Unirse y salir
+  General clan_settings items join_leave lore:
+  - ' '
+  - ' <white>Estado: %uclans_settings_state:JOINLEAVE%'
+  - ''
+  - ' <white>Click para alternar '
+  - ' '
+  - ' <white>Cuando está deshabilitado, tu clan no'
+  - <white>verá más mensajes cuando
+  - <white>entren o salgan
+  General clan_settings items member_manager_wars name: <white>Administrar guerras de Miembro <white>
+  General clan_settings items member_manager_wars lore:
+  - ' '
+  - ' <white>Estado: %uclans_settings_state:MEMBERMANAGERWARS%'
+  - ''
+  - ' <white>Click para cambiar '
+  - ' '
+  - ' <white>Cuando está deshabilitado, solo los '
+  - '<white>líderes y moderadores podrán aceptar '
+  - <white>y enviar solicitudes de guerra
+  General clan_settings items member_manager_homes name: <white>Administrar hogares de Miembro <white>
+  General clan_settings items member_manager_homes lore:
+  - ' '
+  - ' <white>Estado: %uclans_settings_state:MEMBERMANAGERHOMES%'
+  - ''
+  - ' <white>Click para cambiar '
+  - ' '
+  - ' <white>Cuando está deshabilitado, solo los '
+  - <white>moderadores o líderes podrán crear
+  - <white>o eliminar hogares para el clan
+  General clan_settings items opened name: <white>Abrir a todos
+  General clan_settings items opened lore:
+  - ' '
+  - ' <white>Estado: %uclans_settings_state:OPENED%'
+  - ''
+  - ' <white>para activar y desactivar si el'
+  - <white>clan está abierto a todos o solo por invitación
+  General clan_settings items ff name: <white>Fuego amigo
+  General clan_settings items ff lore:
+  - ' '
+  - ' <white>Estado: %uclans_settings_state:CLANFF%'
+  - ''
+  - ' <white>Click para alternar '
+  - ' '
+  - ' <white>Cuando se activa, los miembros pueden'
+  - <white>atacarse unos a otros
+  General clan_settings items allysharedhome name: <white>Home aliado compartido
+  General clan_settings items allysharedhome lore:
+  - ' '
+  - ' <white>Estado: %uclans_settings_state:ALLYSHAREDHOME%'
+  - ''
+  - ' <white>Click para alternar '
+  - ' '
+  - ' <white>Cuando está deshabilitado, los home de tu clan'
+  - <white>no aparecerá en la lista de homes aliados
+  General clan_settings items allysharedchat name: <white>Chat compartido de aliado
+  General clan_settings items allysharedchat lore:
+  - ' '
+  - ' <white>Estado: %uclans_settings_state:ALLYSHAREDCHAT%'
+  - ''
+  - ' <white>Click para alternar '
+  - ' '
+  - ' <white>Cuando está deshabilitado, tu clan no'
+  - <white>recibir o enviar mensajes de aliados<white>
+  General clan_settings items warinvite name: <white>Invitaciones de guerra
+  General clan_settings items warinvite lore:
+  - ' '
+  - ' <white>Estado: %uclans_settings_state:WARINVITE%'
+  - ''
+  - ' <white>Click para alternar '
+  - ' '
+  - ' <white>Cuando está deshabilitado, tu clan'
+  - <white>no recibe desafíos
+  General clan_actions title: <white>Menú de acciones
+  General clan_actions items fill name: ' '
+  General clan_actions items fill lore: [
+    ]
+  General clan_actions items back name: <white>Regresar
+  General clan_actions items back lore:
+  - ' <white>Click para ir al banco'
+  General clan_actions items sethome name: <white>Establecer el home del clan
+  General clan_actions items sethome lore:
+  - ' <white>Click para configurar el home del clan'
+  General clan_actions items name name: <white>Cambiar el nombre del clan
+  General clan_actions items name lore:
+  - ' <white>Click para cambiar el nombre del clan'
+  General clan_actions items desc name: <white>Cambiar la descripción del clan
+  General clan_actions items desc lore:
+  - ' <white>Click para cambiar la descripción del clan'
+  General clan_actions items modtag name: <white>Cambiar la etiqueta del clan
+  General clan_actions items modtag lore:
+  - ' <white>click para cambiar la etiqueta de clan'
+  General clan_top title: <white>Lista de clanes <white>| %current%
+  General clan_top items fill name: ' '
+  General clan_top items fill lore: [
+    ]
+  General clan_top items active name: ' <white>Actual'
+  General clan_top items active lore: [
+    ]
+  General clan_top items kdr name: <white>Top KDR
+  General clan_top items kdr lore:
+  - ' <white>Click para ordenar'
+  - '<white>lista por KDR '
+  - ' '
+  General clan_top items kill name: <white>Top ASESINO
+  General clan_top items kill lore:
+  - ' <white>Click para ordenar'
+  - '<white>lista por ASESINO '
+  - ' '
+  General clan_top items death name: <white>Top MUERTES
+  General clan_top items death lore:
+  - ' <white>Click para ordenar'
+  - '<white>lista por MUERTES '
+  - ' '
+  General clan_top items bank name: <white>Top BANCO
+  General clan_top items bank lore:
+  - ' <white>Click para ordenar'
+  - '<white>lista por BANCO '
+  - ' '
+  General clan_top items member name: <white>Top MIEMBRO
+  General clan_top items member lore:
+  - ' <white>Click para ordenar'
+  - '<white>lista por MIEMBRO '
+  - ' '
+  General clan_top items level name: <white>Top NIVEL
+  General clan_top items level lore:
+  - ' <white>Click para ordenar'
+  - '<white>lista por nivel '
+  - ' '
+  General clan_top items current_all name: <white>Clan %uclans_tag_color%
+  General clan_top items current_all lore:
+  - ''
+  - ' <white>Información de clan'
+  - ' <white>'
+  - ' <white>Fecha de creación: <white>%uclans_creation_date_formated%'
+  - ' <white>'
+  - ' <white>Etiqt: <white>%uclans_tag_color%'
+  - ' <white>Líder: <white>%uclans_leader%'
+  - ' <white>Miembros: <white>%uclans_count_members%'
+  - ''
+  - ' <white>Click derecho para ver información'
+  General clan_top items current_war name: <white>Clan %uclans_tag_color%
+  General clan_top items current_war lore:
+  - ''
+  - ' <white>Información del clan'
+  - ' <white>'
+  - ' <white>Guerras ganadas: <white>%uclans_clan_war_win%'
+  - ' <white>'
+  - ' <white>Etiqt: <white>%uclans_tag_color%'
+  - ' <white>Líder: <white>%uclans_leader%'
+  - ' <white>Miembros: <white>%uclans_count_members%'
+  - ''
+  - ' <white>Click derecho para ver información'
+  General clan_top items current_bank name: <white>Clan %uclans_tag_color%
+  General clan_top items current_bank lore:
+  - ''
+  - ' <white>Información del clan'
+  - ' <white>'
+  - ' <white>Banco: <white>%uclans_money_currency%%uclans_bank_balance%'
+  - ' <white>'
+  - ' <white>Etiqt: <white>%uclans_tag_color%'
+  - ' <white>Líder: <white>%uclans_leader%'
+  - ' <white>Miembros: <white>%uclans_count_members%'
+  - ''
+  - ' <white>Click derecho para ver información'
+  General clan_top items current_member name: <white>Clan %uclans_tag_color%
+  General clan_top items current_member lore:
+  - ''
+  - ' <white>Información del clan'
+  - ' <white>'
+  - ' <white>Miembros: <white>%uclans_count_members%'
+  - ' <white>'
+  - ' <white>Etiqt: <white>%uclans_tag_color%'
+  - ' <white>Líder: <white>%uclans_leader%'
+  - ' <white>Miembros: <white>%uclans_count_members%'
+  - ''
+  - ' <white>Click derecho para ver información'
+  General clan_top items current_death name: <white>Clan %uclans_tag_color%
+  General clan_top items current_death lore:
+  - ''
+  - ' <white>Información del clan'
+  - ' <white>'
+  - ' <white>Muertes: <white>%uclans_clan_deaths%'
+  - ' <white>'
+  - ' <white>Etiqt: <white>%uclans_tag_color%'
+  - ' <white>Líder: <white>%uclans_leader%'
+  - ' <white>Miembros: <white>%uclans_count_members%'
+  - ''
+  - ' <white>Click derecho para ver información'
+  General clan_top items current_kill name: <white>Clan %uclans_tag_color%
+  General clan_top items current_kill lore:
+  - ''
+  - ' <white>Información del clan'
+  - ' <white>'
+  - ' <white>Asesinatos: <white>%uclans_clan_kills%'
+  - ' <white>'
+  - ' <white>Etiqt: <white>%uclans_tag_color%'
+  - ' <white>Líder: <white>%uclans_leader%'
+  - ' <white>Miembros: <white>%uclans_count_members%'
+  - ''
+  - ' <white>Click derecho para ver información'
+  General clan_top items current_kdr name: <white>Clan %uclans_tag_color%
+  General clan_top items current_kdr lore:
+  - ''
+  - ' <white>Información del clan'
+  - ' <white>'
+  - ' <white>KDR: <white>%uclans_clan_kdr%'
+  - ' <white>'
+  - ' <white>Etiqt: <white>%uclans_tag_color%'
+  - ' <white>Líder: <white>%uclans_leader%'
+  - ' <white>Miembros: <white>%uclans_count_members%'
+  - ''
+  - ' <white>Click derecho para ver información'
+  General clan_top items current_level name: <white>Clan %uclans_tag_color%
+  General clan_top items current_level lore:
+  - ''
+  - ' <white>Información del clan'
+  - ' <white>'
+  - ' <white>Nivel: <white>%uclans_level%'
+  - ' <white>'
+  - ' <white>Etiqt: <white>%uclans_tag_color%'
+  - ' <white>Líder: <white>%uclans_leader%'
+  - ' <white>Miembros: <white>%uclans_count_members%'
+  - ''
+  - ' <white>Click derecho para ver información'
+  General clan_top items current name: <white>Clan %uclans_tag_color%
+  General clan_top items current lore:
+  - ''
+  - ' <white>Información de clan'
+  - ' <white>'
+  - ' <white>Nivel: <white>%uclans_level%'
+  - ' <white>'
+  - ' <white>Etiqt: <white>%uclans_tag_color%'
+  - ' <white>Líder: <white>%uclans_leader%'
+  - ' <white>Miembros: <white>%uclans_count_members%'
+  - ''
+  - ' <white>Click derecho para ver información'
+  General clan_top items war name: <white>Top Guerra
+  General clan_top items war lore:
+  - ' <white>Click para ordenar'
+  - '<white>lista por Top Guerra '
+  - ' '
+  General clan_top items all name: <white>Todos los verificados
+  General clan_top items all lore:
+  - ' <white>Click para ordenar'
+  - '<white>lista de todos los clanes '
+  - ' '
+  General clan_top items next name: <white>Siguiente
+  General clan_top items next lore:
+  - ' <white>Click para siguiente'
+  General clan_top items previous name: <white>Previo
+  General clan_top items previous lore:
+  - ' <white>Click para el anterior'
+  General clan_top items back name: <white>Regresar
+  General clan_top items back lore:
+  - ' <white>Click para volver'
+  General clan_members title: <white>Menú de miembros
+  General clan_members items fill name: ' '
+  General clan_members items fill lore: [
+    ]
+  General clan_members items fill2 name: ' '
+  General clan_members items fill2 lore: [
+    ]
+  General clan_members items back name: <white>Regresar
+  General clan_members items back lore:
+  - ' <white>Click para volver'
+  General clan_members items invite name: <white>Invitar jugadores
+  General clan_members items invite lore:
+  - ' <white>Click para invitar a nuevos miembros'
+  General clan_members items list name: <white>Lista de miembros
+  General clan_members items list lore:
+  - ' '
+  - ' <white>Miembros: <white>%uclans_count_members%'
+  - ' '
+  - ' <white>Click para ver la lista de miembros'
+  General clan_members_invite title: <white>Invitar Miembros
+  General clan_members_invite items fill name: ' '
+  General clan_members_invite items fill lore: [
+    ]
+  General clan_members_invite items back name: <white>Volver
+  General clan_members_invite items back lore:
+  - ' <white>Click para volver'
+  General clan_members_invite items current name: <white>%uclans_player%
+  General clan_members_invite items current lore:
+  - ''
+  - ' <white>Nickname: <white>%uclans_player%'
+  - ' <white>Kdr: <white>%uclans_player_kills%<white>/<white>%uclans_player_deaths% <white>(%uclans_player_kdr%)'
+  - ' <white>Entro el: <white>%uclans_player_joindate_formated%'
+  - ' <white>Ultima vez visto: <white>%uclans_player_lastsee_formated%'
+  - ' '
+  - ' <white>Click para invitar'
+  General clan_members_invite items search name: <white>Buscar
+  General clan_members_invite items search lore:
+  - ' <white>Click para buscar miembros'
+  General clan_search_members_invite title: <white>Buscar <white>| <white>%amount%<white>:<white> %search%
+  General clan_search_members_invite items fill name: ' '
+  General clan_search_members_invite items fill lore: [
+    ]
+  General clan_search_members_invite items back name: <white>Volver
+  General clan_search_members_invite items back lore:
+  - ' <white>Click para volver'
+  General clan_search_members_invite items current name: <white>%uclans_player%
+  General clan_search_members_invite items current lore:
+  - ''
+  - ' <white>Nickname: <white>%uclans_player%'
+  - ' <white>Kdr: <white>%uclans_player_kills%<white>/<white>%uclans_player_deaths% <white>(%uclans_player_kdr%)'
+  - ' <white>Entro el: <white>%uclans_player_joindate_formated%'
+  - ' <white>Ultima vez visto: <white>%uclans_player_lastsee_formated%'
+  - ' '
+  - ' <white>Click para invitar'
+  General clan_ally title: <white>Menú de alianzas
+  General clan_ally items fill name: ' '
+  General clan_ally items fill lore: [
+    ]
+  General clan_ally items fill2 name: ' '
+  General clan_ally items fill2 lore: [
+    ]
+  General clan_ally items back name: <white>Regresar
+  General clan_ally items back lore:
+  - ' <white>Click para volver'
+  General clan_ally items invite name: <white>Agregar o quitar alianzas
+  General clan_ally items invite lore:
+  - ' <white>Click para agregar o eliminar alianzas'
+  General clan_ally items list name: <white>Lista de alianzas
+  General clan_ally items list lore:
+  - ' '
+  - ' <white>Aliados: <white>%uclans_clan_count_ally%'
+  - ' '
+  - ' <white>Click para ver la lista de alianzas'
+  General clan_rival title: <white>Menú de rivalidades
+  General clan_rival items fill name: ' '
+  General clan_rival items fill lore: [
+    ]
+  General clan_rival items fill2 name: ' '
+  General clan_rival items fill2 lore: [
+    ]
+  General clan_rival items back name: <white>Regresar
+  General clan_rival items back lore:
+  - ' <white>Click para volver'
+  General clan_rival items invite name: <white>Agregar o eliminar rivales
+  General clan_rival items invite lore:
+  - ' <white>Click para agregar o eliminar rivales'
+  General clan_rival items list name: <white>Lista de rivales
+  General clan_rival items list lore:
+  - ' '
+  - ' <white>Rivales: <white>%uclans_clan_count_rival%'
+  - ' '
+  - ' <white>Click para ver la lista de rivales'
+  Pagination rival title: <white>Lista de rivales
+  Pagination rival items fill name: ' '
+  Pagination rival items fill lore: [
+    ]
+  Pagination rival items back name: <white>Regresar
+  Pagination rival items back lore:
+  - ''
+  - ' <white>Click para volver'
+  Pagination rival items next name: <white>Siguiente página
+  Pagination rival items next lore:
+  - ''
+  - ' <white>Click para continuar'
+  Pagination rival items previous name: <white>Página anterior
+  Pagination rival items previous lore:
+  - ''
+  - ' <white>Click para volver'
+  Pagination rival items current name: <white>Clan %uclans_tag_color%
+  Pagination rival items current lore:
+  - ''
+  - ' <white>Información del clan'
+  - ' <white>'
+  - ' <white>Nivel: <white>%uclans_level%'
+  - ' <white>'
+  - ' <white>Etiqt: <white>%uclans_tag_color%'
+  - ' <white>Líder: <white>%uclans_leader%'
+  - ' <white>Miembros: <white>%uclans_count_members%'
+  - ''
+  - ' <white>Click derecho para ver información'
+  Pagination ally title: <white>Lista de aliados
+  Pagination ally items fill name: ' '
+  Pagination ally items fill lore: [
+    ]
+  Pagination ally items back name: <white>Regresar
+  Pagination ally items back lore:
+  - ''
+  - ' <white>Click para volver'
+  Pagination ally items next name: <white>Siguiente página
+  Pagination ally items next lore:
+  - ''
+  - ' <white>Click para continuar'
+  Pagination ally items previous name: <white>Página anterior
+  Pagination ally items previous lore:
+  - ''
+  - ' <white>Click para volver'
+  Pagination ally items current name: <white>Clan %uclans_tag_color%
+  Pagination ally items current lore:
+  - ''
+  - ' <white>Información del clan'
+  - ' <white>'
+  - ' <white>Nivel: <white>%uclans_level%'
+  - ' <white>'
+  - ' <white>Etiqt: <white>%uclans_tag_color%'
+  - ' <white>Líder: <white>%uclans_leader%'
+  - ' <white>Miembros: <white>%uclans_count_members%'
+  - ''
+  - ' <white>Clic derecho para ver información'
+  Pagination members title: <white>Lista de miembros
+  Pagination members items fill name: ' '
+  Pagination members items fill lore: [
+    ]
+  Pagination members items back name: <white>Regresar
+  Pagination members items back lore:
+  - ''
+  - ' <white>Click para volver'
+  Pagination members items next name: <white>Siguiente página
+  Pagination members items next lore:
+  - ''
+  - ' <white>Click para continuar'
+  Pagination members items previous name: <white>Página anterior
+  Pagination members items previous lore:
+  - ''
+  - ' <white>Click  para volver'
+  Pagination members items current name: <white>%uclans_player%
+  Pagination members items current lore:
+  - ''
+  - ' <white>Líder: <white>%uclans_player_leader_yes_no%'
+  - ' <white>Moderadores: <white>%uclans_player_mod_yes_no%'
+  - ' <white>Nickname: <white>%uclans_player%'
+  - ' <white>Kdr: <white>%uclans_player_kills%<white>/<white>%uclans_player_deaths% <white>(%uclans_player_kdr%)'
+  - ' <white>Entró: <white>%uclans_player_joindate_formated%'
+  - ' <white>Ultima vez visto: <white>%uclans_player_lastsee_formated%'
+  - ' '
+  - ' <white>Click para ver el perfil'
+  Pagination clans title: <white>Clanes verificados
+  Pagination clans items fill name: ' '
+  Pagination clans items fill lore: [
+    ]
+  Pagination clans items back name: <white>Regresar
+  Pagination clans items back lore:
+  - ''
+  - ' <white>Click para volver'
+  Pagination clans items next name: <white>Siguiente página
+  Pagination clans items next lore:
+  - ''
+  - ' <white>Click para proceder'
+  Pagination clans items previous name: <white>Página anterior
+  Pagination clans items previous lore:
+  - ''
+  - ' <white>Click para volver'
+  Pagination clans items current name: <white>Clan %uclans_tag_color%
+  Pagination clans items current lore:
+  - ''
+  - ' <white>Información del clan'
+  - ' <white>'
+  - ' <white>Nivel: <white>%uclans_level%'
+  - ' <white>'
+  - ' <white>Etiqt: <white>%uclans_tag_color%'
+  - ' <white>Líder: <white>%uclans_leader%'
+  - ' <white>Miembros: <white>%uclans_count_members%'
+  - ''
+  - ' <white>Click derecho para ver información'
+  Home clan_allyhome title: <white>Home Aliados
+  Home clan_allyhome items back name: <white>Regresar
+  Home clan_allyhome items back lore:
+  - ''
+  - ' <white>Click para volver'
+  Home clan_allyhome items next name: <white>Siguiente página
+  Home clan_allyhome items next lore:
+  - ''
+  - ' <white>Click para proceder'
+  Home clan_allyhome items previous name: <white>Página anterior
+  Home clan_allyhome items previous lore:
+  - ''
+  - ' <white>Click para volver'
+  Home clan_allyhome items current name: <white>Home %uclans_home:<num>:name% del clan %uclans_tag_color%<white>
+  Home clan_allyhome items current lore:
+  - ''
+  - ' <white>Información del home'
+  - ' <white>'
+  - ' <white>Clan: <white>%uclans_tag_color%'
+  - ' <white>Servidor: <white>%uclans_home:<num>:server%'
+  - ' <white>Nombre: <white>%uclans_home:<num>:name%'
+  - ''
+  - ' <white>Click izquierdo para teletransportarte'
+  Home clan_allyhome items fill name: ' '
+  Home clan_allyhome items fill lore: [
+    ]
+  General player_profile items settings name: <white>Configuración de Perfil
+  General player_profile items settings lore:
+  - ''
+  - ' <white>Edita tus preferencias de perfil'
+  - ' '
+  - ' <white>Click para abrir'
+  General player_settings title: <white>Menú de configuración de Perfil
+  General player_settings items fill name: ' '
+  General player_settings items fill lore: [
+    ]
+  General player_settings items fill2 name: ' '
+  General player_settings items fill2 lore: [
+    ]
+  General player_settings items nickname name: <white>Cambiar Nick Visible
+  General player_settings items nickname lore:
+  - ''
+  - ' <white>Nombre: <white>%uclans_player_realname%'
+  - ' <white>Actual: <white>%uclans_player_nickname%'
+  - ''
+  - ' <white>CLICK-IZQUIERDO para cambiar'
+  - ' <white>CLICK-DERECHO para restablecer'
+  General player_settings items skin name: <white>Actualizar Skin
+  General player_settings items skin lore:
+  - ''
+  - ' <white>Click para actualizar la skin actual'
+  General player_settings items skin_cooldown name: <white>Skin Actualizada!
+  General player_settings items skin_cooldown lore:
+  - ''
+  - ' <white>Espera por <white>%time%</<white> <white>para actualizar otra vez'
+  General player_settings items invite name: <white>Invitaciones de Clan
+  General player_settings items invite lore:
+  - ''
+  - ' <white>Estado: %uclans_player_settings_state:INVITATIONS%'
+  - ''
+  - ' <white>Click para cambiar'
+  - ''
+  - ' <white>Si esta opción está deshabilitada,'
+  - <white>no recibirás invitaciones de clan
+  General player_settings items back name: <white>Regresar
+  General player_settings items back lore:
+  - ' <white>Click para volver al perfil'
+  General clan_settings items fill2 name: ' '
+  General clan_settings items fill2 lore: [
+    ]
+  General clan_settings items clan_roles name: <white>Roles de Clan
+  General clan_settings items clan_roles lore:
+  - ''
+  - ' <white>Administrar roles de clan'
+  - ' <white>Click para abrir'
+  General clan_settings items member_ban name: <white>Jugadores Baneados
+  General clan_settings items member_ban lore:
+  - ''
+  - ' <white>Baneado: <white>%uclans_count_banned%'
+  - ''
+  - ' <white>Los jugadores baneados no pueden unirse al clan'
+  - <white>si está abierto ni pueden ser invitados nuevamente
+  - ''
+  - ' <white>Click para abrir'
+  General clan_settings items member_permissions name: <white>Permisos de Miembros
+  General clan_settings items member_permissions lore:
+  - ''
+  - ' <white>Administrar permisos de miembros'
+  - ' <white>Click para abrir'
+  General clan_settings items clan_edit name: <white>Editar clan
+  General clan_settings items clan_edit lore:
+  - ''
+  - ' <white>Editar la configuración del clan'
+  - ' <white>Click para abrir'
+  General clan_roles title: <white>Roles de Clan
+  General clan_roles items fill name: ' '
+  General clan_roles items fill lore: [
+    ]
+  General clan_roles items fill2 name: ' '
+  General clan_roles items fill2 lore: [
+    ]
+  General clan_roles items next name: <white>Siguiente
+  General clan_roles items next lore:
+  - ' <white>Click para siguiente'
+  General clan_roles items previous name: <white>Anterior
+  General clan_roles items previous lore:
+  - ' <white>Click para anterior'
+  General clan_roles items back name: <white>Volver
+  General clan_roles items back lore:
+  - ' <white>Click para volver'
+  General banned_members title: <white>Jugadores Baneado <white>| <white>%amount%
+  General banned_members items fill name: ' '
+  General banned_members items fill lore: [
+    ]
+  General banned_members items fill2 name: ' '
+  General banned_members items fill2 lore: [
+    ]
+  General banned_members items next name: <white>Siguiente
+  General banned_members items next lore:
+  - ' <white>Click para siguiente'
+  General banned_members items previous name: <white>Anterior
+  General banned_members items previous lore:
+  - ' <white>Click anterior'
+  General banned_members items current name: <white>%uclans_player%
+  General banned_members items current lore:
+  - ' <white>Click para <white>DESBANEAR</red><white> este jugador'
+  General banned_members items add name: <white>Banear un jugador
+  General banned_members items add lore:
+  - ' <white>Click para banear'
+  General banned_members items back name: <white>Volver
+  General banned_members items back lore:
+  - ' <white>Click para volver'
+  General member_permissions title: <white>Permisos de miembros
+  General member_permissions items fill name: ' '
+  General member_permissions items fill lore: [
+    ]
+  General member_permissions items fill2 name: ' '
+  General member_permissions items fill2 lore: [
+    ]
+  General member_permissions items member_manager_wars name: <white>Administrar Guerras de Miembros
+  General member_permissions items member_manager_wars lore:
+  - ' '
+  - ' <white>Estado: %uclans_settings_state:MEMBERMANAGERWARS%'
+  - ''
+  - ' <white>Click para cambiar '
+  - ' '
+  - ' <white>Cuando está deshabilitado, solo los'
+  - '<white>líderes y moderadores podrán aceptar '
+  - <white>y enviar solicitudes de guerra
+  General member_permissions items member_manager_homes name: <white>Administrar Homes de Miembros
+  General member_permissions items member_manager_homes lore:
+  - ' '
+  - ' <white>Estado: %uclans_settings_state:MEMBERMANAGERHOMES%'
+  - ''
+  - ' <white>Click para cambiar '
+  - ' '
+  - ' <white>Cuando está deshabilitado, solo los'
+  - '<white>moderadores o líderes podrán crear '
+  - <white>o eliminar hogares para el clan
+  General member_permissions items back name: <white>Volver
+  General member_permissions items back lore:
+  - ' <white>Click para volver '
+  General clan_actions items fill2 name: ' '
+  General clan_actions items fill2 lore: [
+    ]
+  General clan_actions items join_leave name: <white>Entrar y Salir
+  General clan_actions items join_leave lore:
+  - ' '
+  - ' <white>Estado: %uclans_actions_state:JOINLEAVE%'
+  - ''
+  - ' <white>Click para cambiar'
+  - ' '
+  - ' <white>Cuando está deshabilitado,'
+  - <white>tu clan no verá más mensajes
+  - <white>al entrar o salir
+  General clan_actions items opened name: <white>Clan abierto a todos
+  General clan_actions items opened lore:
+  - ' '
+  - ' <white>Estado: %uclans_actions_state:OPENED%'
+  - ''
+  - ' <white>Click para activar y desactivar si el'
+  - <white>clan está abierto a todos o solo por invitación
+  General clan_actions items ff name: <white>Fuego Amigo
+  General clan_actions items ff lore:
+  - ' '
+  - ' <white>Estado: %uclans_actions_state:CLANFF%'
+  - ''
+  - ' <white>Click para cambiar '
+  - ' '
+  - ' <white>Cuando se activa, los miembros'
+  - <white>pueden atacarse entre sí<white>
+  General clan_actions items allysharedhome name: <white>Home compartido aliada
+  General clan_actions items allysharedhome lore:
+  - ' '
+  - ' <white>Estado: %uclans_actions_state:ALLYSHAREDHOME%'
+  - ''
+  - ' <white>Click para cambiar '
+  - ' '
+  - ' <white>Cuando está desactivada, las casas de tu'
+  - <white>clan no aparecerán en la lista de casas aliadas
+  General clan_actions items allysharedchat name: <white>Chat compartido aliado
+  General clan_actions items allysharedchat lore:
+  - ' '
+  - ' <white>Estado: %uclans_actions_state:ALLYSHAREDCHAT%'
+  - ''
+  - ' <white>Click para cambiar '
+  - ' '
+  - ' <white>Cuando está deshabilitado, tu clan'
+  - <white>no recibe ni envía mensajes de aliados
+  General clan_actions items warinvite name: <white>Invitaciones de Guerra
+  General clan_actions items warinvite lore:
+  - ' '
+  - ' <white>Estado: %uclans_actions_state:WARINVITE%'
+  - ''
+  - ' <white>Click para cambiar '
+  - ' '
+  - ' <white>Cuando está deshabilitado,'
+  - <white>tu clan no recibirá retos
+  General clan_actions items delete name: <white>Eliminar el Clan
+  General clan_actions items delete lore:
+  - ' <white>Click para eliminar el clan'
+  - ' <white>Solo el líder puede hacer esto!'
+  - ' <white>Esto eliminará la protección de su tierra'
+  - ' <white>¡Esto requiere confirmación en el CHAT!'
+  - ' '
+  - ' <white>Atención, esta acción no se puede deshacer!'
+  General clan_stats items homes name: <white>List Homes
+  General clan_stats items homes lore:
+  - ' '
+  - ' <white>Homes: <white>%uclans_home%'
+  - ''
+  - ' <white>Click to open'
+  General clan_actions items publichomes name: <white>Homes are public
+  General clan_actions items publichomes lore:
+  - ' '
+  - ' <white>State: %uclans_actions_state:PUBLICHOMES%'
+  - ''
+  - ' <white>Click to toggle on and off to'
+  - <white>making the homes public and
+  - <white>visible to other clans
+  Pagination listhomes title: <white>Homes List
+  Pagination listhomes items fill name: ' '
+  Pagination listhomes items fill lore: [
+    ]
+  Pagination listhomes items back name: <white>Volver atras
+  Pagination listhomes items back lore:
+  - ''
+  - ' <white>Click para volver atras'
+  Pagination listhomes items next name: <white>Pagina siguiente
+  Pagination listhomes items next lore:
+  - ''
+  - ' <white>Click para siguiente pagina'
+  Pagination listhomes items previous name: <white>Pagina anterior
+  Pagination listhomes items previous lore:
+  - ''
+  - ' <white>Click para volver atras'
+  Pagination listhomes items current name: <white>Home %uclans_home:<num>:name%
+  Pagination listhomes items current lore:
+  - ''
+  - ' <white>Home Information'
+  - ' <white>'
+  - ' <white>Server: <white>%uclans_home:<num>:server%'
+  - ' <white>Name: <white>%uclans_home:<num>:name%'
+  - ' <white>Location: <white>%uclans_home:<num>:location%'
+  General clan_top items point name: <white>All Point
+  General clan_top items point lore:
+  - ' <white>Click to order'
+  - '<white>list by Top Points '
+  - ' '
+  General clan_top items current_point name: <white>Clan %uclans_tag_color%
+  General clan_top items current_point lore:
+  - ''
+  - ' <white>Clan Information'
+  - ' <white>'
+  - ' <white>Points: <white>%uclans_points%'
+  - ' <white>'
+  - ' <white>Tag: <white>%uclans_tag_color%'
+  - ' <white>Leader: <white>%uclans_leader%'
+  - ' <white>Members: <white>%uclans_count_members%'
+  - ''
+  - ' <white>Right-Click to view info'
+ 
+ 
+ # TRANSLATIONS OF THE COMMANDS
+ 
+COMMANDS:
+  clan help show on_help: ' <white>/clan help <white>-<white> Mostrar menú de ayuda'
+  clan help show on_help_json hover_text: <white>Click para ver la ayuda de los clanes
+  clan help show on_success: '%tag% <white>Estás viendo la ayuda!'
+  clan help show on_error: '<red><bold>ERROR <dark_gray>» <white>white al mostrar texto'
+  clan help show on_usage: '%tag% <white>Usa <white>/clan help'
+  clan create show on_help_json hover_text: <white>Click para crear un nuevo clan
+  clan create show on_help: ' <white>/clan create <white>-<white> Crea un nuevo clan'
+  clan create show on_success: '%tag% <white>Has creado un nuevo clan!'
+  clan create show on_error: '<red><bold>ERROR <dark_gray>» <white>white al crear un nuevo clan, inténtalo de nuevo'
+  clan create show on_usage: '%tag% <white>Usa <white>/clan create <tag>'
+  clan cancel show on_help_json hover_text: <white>Click para cancelar acciones pendientes
+  clan cancel show on_help: ' <white>/clan cancel <white>-<white> Cancelar acciones pendientes'
+  clan cancel show on_success: '%tag% <white>Cancelado con éxito!'
+  clan cancel show on_error: '<red><bold>ERROR <dark_gray>» <white>white al cancelar'
+  clan cancel show on_usage: '%tag% <white>Use <white>/clan cancel'
+  clan changeleader show on_help_json hover_text: <white>Click para transferir el liderazgo
+  clan changeleader show on_help: ' <white>/clan changeleader <jugador> <white>-<white> Transferir el liderazgo'
+  clan changeleader show on_success: '%tag% <white>Has cambiado el liderazgo del clan a %clan_leader%'
+  clan changeleader show on_error: '<red><bold>ERROR <dark_gray>» <white>white al transferir el liderazgo'
+  clan changeleader show on_usage: '%tag% <white>Use <white>/clan changeleader <jugador>'
+  clan desc show on_help: ' <white>/clan desc <white>-<white> Añadir descripción al Clan'
+  clan desc show on_help_json hover_text: <white>Clic para agregar / cambiar la descripción de un clan
+  clan desc show on_success: '%tag% <white>Has cambiado la descripción del clan!'
+  clan desc show on_error: '<red><bold>ERROR <dark_gray>» <white>white al cambiar la descripción del clan'
+  clan desc show on_usage: '%tag% <white>Usa <white>/clan desc <descripción>'
+  clan disband show on_help: ' <white>/clan disband <white>-<white> Borra tu clan'
+  clan disband show on_help_json hover_text: <white>Click para eliminar un clan
+  clan disband show on_success: '%tag% <white>Has eliminado tu clan!'
+  clan disband show on_error: '<red><bold>ERROR <dark_gray>» <white>white al eliminar el clan, inténtalo de nuevo'
+  clan disband show on_usage: '%tag% <white>Usa <white>/clan disband CONFIRM'
+  clan leave show on_help: ' <white>/clan leave <white>-<white> Dejar un clan'
+  clan leave show on_help_json hover_text: <white>Click para dejar al Clan
+  clan leave show on_success: '%tag% <white>Dejaste el Clan!'
+  clan leave show on_error: '<red><bold>ERROR <dark_gray>» <white>white al salir del Clan, vuelve a intentarlo'
+  clan leave show on_usage: '%tag% <white>Usa <white>/clan leave'
+  clan invite show on_help: ' <white>/clan invite <player> <white>-<white> Invita a un jugador a tu clan'
+  clan invite show on_help_json hover_text: <white>Click para enviar invitación al jugador
+  clan invite show on_success: '%tag% <white>Se ha enviado una invitación al jugador, espere!'
+  clan invite show on_error: '<red><bold>ERROR <dark_gray>» <white>white al invitar al jugador'
+  clan invite show on_usage: '%tag% <white>Usa <white>/clan invite <jugador>'
+  clan join show on_help: ' <white>/clan join <etiqueta> <white>- <white>Acepta la invitación de un jugador'
+  clan join show on_help_json hover_text: <white>Click para aceptar invitación
+  clan join show on_success: '%tag% <white>Has aceptado la invitación para entrar en el clan!'
+  clan join show on_error: '<red><bold>ERROR <dark_gray>» <white>white al ingresar al clan, intentar otra vez'
+  clan join show on_usage: '%tag% <white>Usa <white>/clan join <etiqueta>'
+  clan deny show on_help: ' <white>/clan deny <etiqueta> <white>- <white>Negar la invitación de un jugador'
+  clan deny show on_help_json hover_text: <white>Click para cancelar la invitación
+  clan deny show on_success: '%tag% <white>Has recibido una invitación!'
+  clan deny show on_error: '<red><bold>ERROR <dark_gray>» <white>white al rechazar la invitación'
+  clan deny show on_usage: '%tag% <white>Usa <white>/clan deny <etiqueta>'
+  clan kick show on_help: ' <white>/clan kick <jugador> <white>-<white> Eliminar jugador del clan'
+  clan kick show on_help_json hover_text: <white>Click para eliminar a un jugador del clan
+  clan kick show on_success: '%tag% <white>El jugador ha sido eliminado del clan'
+  clan kick show on_error: '<red><bold>ERROR <dark_gray>» <white>white al expulsar al jugador'
+  clan kick show on_usage: '%tag% <white>Usa <white>/clan kick <jugador>'
+  clan promote show on_help: ' <white>/clan promote <jugador> <white>-<white> Ascender al jugador a moderador'
+  clan promote show on_help_json hover_text: <white>Click para promover al jugador
+  clan promote show on_success: '%tag% <white>Jugador promovido a moderador del clan'
+  clan promote show on_error: '<red><bold>ERROR <dark_gray>» <white>white al ascender al jugadorwhite Vuelve a intentarlowhite'
+  clan promote show on_usage: '%tag% <white>Usa <white>/clan promote <jugador>'
+  clan demote show on_help: ' <white>/clan demote <jugador> <white>-<white> Degrada al jugador en el clan'
+  clan demote show on_help_json hover_text: <white>Click para degradar al jugador
+  clan demote show on_success: '%tag% <white>El jugador ha sido degradado en el clan'
+  clan demote show on_error: '<red><bold>ERROR <dark_gray>» <white>white al degradar a este jugadorwhite Vuelve a intentarlo'
+  clan demote show on_usage: '%tag% <white>Usa <white>/clan demote <jugador>'
+  clan home show on_help: ' <white>/clan home <create|delete|list|teleport>  <nombre> <white>-<white> Teletransportarse al home del clan'
+  clan home show on_help_json hover_text: <white>Click para teletransportarte al home del Clan
+  clan home show on_success: '%tag% <white>Te has teletransportado al home del Clan!'
+  clan home show on_error: '<red><bold>ERROR <dark_gray>» <white>white al teletransportarse al home del clan'
+  clan home show on_usage: '%tag% <white>Usa <white>/clan home <create|delete|list|teleport> <nombre>'
+  clan chat show on_help: ' <white>/clan chat <white>-<white> Bloquea el chat para el clan o usa <white>/  <msg>'
+  clan chat show on_help_json hover_text: <white>Click para alternar el chat del clan
+  clan chat show on_success: '%tag% <white>Chat del clan bloqueado ahora: <white>%player_chat%'
+  clan chat show on_error: '<red><bold>ERROR <dark_gray>» <white>white al usar el chat'
+  clan chat show on_usage: '%tag% <white>Usa <white>/clan chat'
+  clan ff show on_help: ' <white>/clan ff <white>-<white> Alternar fuego amigo en el clan'
+  clan ff show on_help_json hover_text: <white>Click para alternar el fuego amigo del clan
+  clan ff show on_success: '%tag% <white>Fuego amigo del clan cambiado a <white>%clan_ff%'
+  clan ff show on_error: '<red><bold>ERROR <dark_gray>» <white>white al usar ff'
+  clan ff show on_usage: '%tag% <white>Usa <white>/clan ff'
+  clan modtag show on_help: ' <white>/clan modtag <nueva etiqueta> <white>-<white> Cambiar etiqueta de clan'
+  clan modtag show on_help_json hover_text: <white>Click para cambiar la etiqueta
+  clan modtag show on_success: '%tag% <white>La etiqueta de Clan ha cambiado a <white>%clan_tag%'
+  clan modtag show on_error: '<red><bold>ERROR <dark_gray>» <white>white al cambiar la etiqueta del clan'
+  clan modtag show on_usage: '%tag% <white>Usa <white>/clan modtag <nueva etiqueta>'
+  clan list show on_help: ' <white>/clan list <white>(type) <white>-<white> Lista de todos los clanes'
+  clan list show on_help_json hover_text: <white>Click para la lista de todos los clanes
+  clan list show on_success: '%tag% <white>Éxito para usar la lista'
+  clan list show on_error: '<red><bold>ERROR <dark_gray>» <white>white al usar la lista'
+  clan list show on_usage: '%tag% <white>Usa <white>/clan list <white>(type)'
+  clan info show on_help: ' <white>/clan info [etiqueta] <white>-<white> Mostrar información del clan'
+  clan info show on_help_json hover_text: <white>Click para ver la información del clan
+  clan info show on_success: ''
+  clan info show on_error: '<red><bold>ERROR <dark_gray>» Al usar la información'
+  clan info show on_usage: '%tag% <white>Use <white>/clan info [etiqueta]'
+  clan profile show on_help: ' <white>/clan profile [jugador] <white>-<white> Mostrar perfil de jugador'
+  clan profile show on_help_json hover_text: <white>Click para mostrar el perfil
+  clan profile show on_success: '%tag% <white>Éxito para usar el perfil'
+  clan profile show on_error: '<red><bold>ERROR <dark_gray>» <white>white al usar el perfil'
+  clan profile show on_usage: '%tag% <white>Usa <white>/clan profile [jugador]'
+  clan rival show on_help: ' <white>/clan rival <add/remove> <etiqueta> <white>-<white> A�adir clan al rival'
+  clan rival show on_help_json hover_text: <white>Click para añadir / eliminar un rival del clan
+  clan rival show on_success: '%tag% <white>Se actualiza la lista de rivalidades'
+  clan rival show on_error: '<red><bold>ERROR <dark_gray>» <white>white al usar rival'
+  clan rival show on_usage: '%tag% <white>Usa <white>/clan rival <add/remove> <etiqueta><white>'
+  clan rivalries show on_help: ' <white>/clan rivalries <white>-<white> Lista de rivales'
+  clan rivalries show on_help_json hover_text: <white>Click para enumerar a los rivales del clan
+  clan rivalries show on_success: '%tag% <white>Éxito al establecer rivales'
+  clan rivalries show on_error: '<red><bold>ERROR <dark_gray>» <white>white al establecer rivales'
+  clan rivalries show on_usage: '%tag% <white>Usa <white>/clan rivalries'
+  clan ally show on_help: ' <white>/clan ally <add/remove/accept/deny> <etiqueta> <white>-<white> A�adir clan como aliado'
+  clan ally show on_help_json hover_text: <white>Click para agregar / eliminar un aliado del clan
+  clan ally show on_success: '%tag% <white>lista de alianzas actualizada'
+  clan ally show on_error: '<red><bold>ERROR <dark_gray>» <white>white al establecer un aliado'
+  clan ally show on_usage: '%tag% <white>Usa <white>/clan ally <add/remove/accept/deny> <etiqueta><white>'
+  clan alliances show on_help: ' <white>/clan alliances <white>-<white> Lista de alianzas'
+  clan alliances show on_help_json hover_text: <white>Click para enumerar las alianzas del Clan
+  clan alliances show on_success: '%tag% <white>Éxito al usar alianzas'
+  clan alliances show on_error: '<red><bold>ERROR <dark_gray>» <white>white al usar alianzas'
+  clan alliances show on_usage: '%tag% <white>Use <white>/clan alliances'
+  clan members show on_help: ' <white>/clan members <white>-<white> Muestra la lista de miembros'
+  clan members show on_help_json hover_text: <white>Click para ver
+  clan members show on_success: '%tag% <white>Éxito al usar miembros'
+  clan members show on_error: '<red><bold>ERROR <dark_gray>» <white>white al usar miembros'
+  clan members show on_usage: '%tag% <white>Usa <white>/clan members'
+  clan settings show on_help: ' <white>/clan settings <TIPO> <VALOR> <white>-<white> Cambiar la configuración del clan'
+  clan settings show on_help_json hover_text: <white>Click para cambiar la configuración del clan
+  clan settings show on_success: '%tag% <white>La configuración del clan cambió a <white>%type%<white>:<white>%value%'
+  clan settings show on_error: '<red><bold>ERROR <dark_gray>» <white>Se produjo un white al cambiar la configuración del clan'
+  clan settings show on_usage: '%tag% <white>Usa <white>/clan settings <TIPO> <VALOR>'
+  clan regroup show on_help: ' <white>/clan regroup <send/accept/deny> <white>-<white> Reagrupar el clan'
+  clan regroup show on_help_json hover_text: <white>Haga click para reagrupar el clan
+  clan regroup show on_success: '%tag% <white>Se ha enviado la solicitud de reagrupamiento'
+  clan regroup show on_error: '<red><bold>ERROR <dark_gray>» <white>Ocurrió un white al enviar la solicitud'
+  clan regroup show on_usage: '%tag% <white>Usa <white>/clan regroup <send/accept/deny>'
+  uclan help show on_help: ' <white>/uclan help <white>-<white> Mostrar menú de ayuda'
+  uclan help show on_help_json hover_text: <white>Click para ver la ayuda de los clanes
+  uclan help show on_success: '%tag% <white>Éxito para utilizar la ayuda'
+  uclan help show on_error: '<red><bold>ERROR <dark_gray>» <white>white al utilizar la ayuda'
+  uclan help show on_usage: '%tag% <white>white usa <white>/uclan help'
+  uclan chatspy show on_help: ' <white>/uclan chatspy <white>-<white> Espiar el chat del clan'
+  uclan chatspy show on_help_json hover_text: <white>Click para espiar el chat del clan
+  uclan chatspy show on_success: '%tag% <white>Chat Spy está ahora: %state%'
+  uclan chatspy show on_error: '<red><bold>ERROR <dark_gray>» <white>Ocurrió un white al cambiar'
+  uclan chatspy show on_usage: '%tag% <white>Usa <white>/uclan chatspy'
+  uclan addslot show on_help: ' <white>/uclan addslot <jugador|etiqt> <cantidad> <white>-<white> Agrega espacios al Clan'
+  uclan addslot show on_help_json hover_text: <white>Click para agregar espacios al clan
+  uclan addslot show on_success: '%tag% <white>Has añadido %num% espacios para el %clan% clan'
+  uclan addslot show on_error: '<red><bold>ERROR <dark_gray>» <white>Hubo un white al agregar'
+  uclan addslot show on_usage: '%tag% <white>Usa <white>/uclan addslot <jugador|etiqt> <cantidad>'
+  uclan setslot show on_help: ' <white>/uclan setslot <jugador|etiqt> <cantidad> <white>-<white> Establecer espacios para el Clan'
+  uclan setslot show on_help_json hover_text: <white>Click para establecer espacios para el clan
+  uclan setslot show on_success: '%tag% <white>Ha establecido %num% espacios para el %clan% clan'
+  uclan setslot show on_error: '<red><bold>ERROR <dark_gray>» <white>Hubo un white al agregar'
+  uclan setslot show on_usage: '%tag% <white>Use <white>/uclan setslot <jugador|etiqt> <cantidad>'
+  uclan removeslot show on_help: ' <white>/uclan removeslot <jugador|etiqt> <cantidad> <white>-<white> Eliminar espacios al Clan'
+  uclan removeslot show on_help_json hover_text: <white>Click para eliminar las ranuras del clan
+  uclan removeslot show on_success: '%tag% <white>Te has quitado %num% espacios para el %clan% clan'
+  uclan removeslot show on_error: '<red><bold>ERROR <dark_gray>» <white>Hubo un white al agregar'
+  uclan removeslot show on_usage: '%tag% <white>Use <white>/uclan removeslot <jugador|etiqt> <cantidad>'
+  uclan addpoints show on_help: ' <white>/uclan addpoints <jugador|etiqt> <cantidad> [reason] <white>-<white> Suma puntos al Clan'
+  uclan addpoints show on_help_json hover_text: <white>Click para agregar puntos al clan
+  uclan addpoints show on_success: '%tag% <white>Has añadido %num% puntos para el %clan% clan'
+  uclan addpoints show on_error: '<red><bold>ERROR <dark_gray>» <white>Hubo un white al agregar'
+  uclan addpoints show on_usage: '%tag% <white>Use <white>/uclan addpoints <jugador|etiqt> <cantidad> [reason]'
+  uclan setpoints show on_help: ' <white>/uclan setpoints <jugador|etiqt> <cantidad> [reason] <white>-<white> establecer puntos para el Clan'
+  uclan setpoints show on_help_json hover_text: <white>Click para establecer puntos para el clan
+  uclan setpoints show on_success: '%tag% <white>Ha establecido %num% puntos para el %clan% clan'
+  uclan setpoints show on_error: '<red><bold>ERROR <dark_gray>» <white>Hubo un white al agregar'
+  uclan setpoints show on_usage: '%tag% <white>Use <white>/uclan setpoints <jugador|etiqt> <cantidad> [reason]'
+  uclan removepoints show on_help: ' <white>/uclan removepoints <jugador|etiqt> <cantidad> [reason] <white>-<white> Quitar puntos al Clan'
+  uclan removepoints show on_help_json hover_text: <white>Click para quitar puntos al clan
+  uclan removepoints show on_success: '%tag% <white>Has quitado %num% puntos a el %clan% clan'
+  uclan removepoints show on_error: '<red><bold>ERROR <dark_gray>» <white>Hubo un white al eliminar'
+  uclan removepoints show on_usage: '%tag% <white>Use <white>/uclan removepoints <jugador|etiqt> <cantidad> [reason]'
+  uclan changetag show on_help: ' <white>/uclan changetag <etiqt> <nueva etiqueta> <white>-<white> Cambiar una etiqueta de clan'
+  uclan changetag show on_help_json hover_text: <white>Click para cambiar una etiqueta de clan
+  uclan changetag show on_success: '%tag% <white>La etiqueta del clan <white>%clan% <white>ha sido cambiado a <white>%newtag%'
+  uclan changetag show on_error: '<red><bold>ERROR <dark_gray>» <white>Ocurrió un white al cambiar la etiqueta'
+  uclan changetag show on_usage: '%tag% <white>Erro usa <white>/uclan changetag <tag> <newtag>'
+  uclan resetplayerkdr show on_help: ' <white>/uclan resetplayerkdr <jugador> <white>-<white> Reiniciar el KDR del jugador'
+  uclan resetplayerkdr show on_help_json hover_text: <white>Click para restablecer el KDR de jugador
+  uclan resetplayerkdr show on_success: '%tag% <white>Has restablecido el KDR del jugadorwhite <white>%player%'
+  uclan resetplayerkdr show on_error: '<red><bold>ERROR <dark_gray>» <white>Ocurrió un white al restablecer'
+  uclan resetplayerkdr show on_usage: '%tag% <white>Usa <white>/uclan resetplayerkdr <jugador>'
+  uclan resetclankdr show on_help: ' <white>/uclan resetclankdr <tag> <white>-<white> Reiniciar KDR del Clan'
+  uclan resetclankdr show on_help_json hover_text: <white>Click para restablecer KDR del Clan
+  uclan resetclankdr show on_success: '%tag% <white>Has restablecido el KDR del clan <white>%uclans_tag_color%'
+  uclan resetclankdr show on_error: '<red><bold>ERROR <dark_gray>» <white>Ocurrió un white al restablecer'
+  uclan resetclankdr show on_usage: '%tag% <white>Usa <white>/uclan resetclankdr <etiqueta>'
+  uclan globalff show on_help: ' <white>/uclan globalff <white>-<white> Cambiar global el ff'
+  uclan globalff show on_help_json hover_text: <white>Click en cambiar global FF
+  uclan globalff show on_success: '%tag% <white>Ha cambiado un ff global a <white>%globalff%'
+  uclan globalff show on_error: '<red><bold>ERROR <dark_gray>» <white>white al usar globaff'
+  uclan globalff show on_usage: '%tag% <white>Usa <white>/uclan globalff'
+  uclan delete show on_help: ' <white>/uclan delete <etiqueta> <white>-<white> Eliminar un nuevo clan'
+  uclan delete show on_help_json hover_text: <white>Click para eliminar un clan
+  uclan delete show on_success: '%tag% <white>Has eliminado un clan!'
+  uclan delete show on_error: '<red><bold>ERROR <dark_gray>» <white>white al eliminar el clan'
+  uclan delete show on_usage: '%tag% <white>Usa <white>/uclan delete <etiqueta>'
+  uclan forcejoin show on_help: ' <white>/uclan forcejoin <jugador> <etiqueta> <white>-<white> Agregar un jugador a un clan'
+  uclan forcejoin show on_help_json hover_text: <white>Click para añadir un jugador a un clanwhite
+  uclan forcejoin show on_success: '%tag% <white>Añadiste el jugador!'
+  uclan forcejoin show on_error: '<red><bold>ERROR <dark_gray>» <white>white al agregar jugador'
+  uclan forcejoin show on_usage: '%tag% <white>Usa <white>/uclan forcejoin <jugador> <etiqueta>'
+  uclan verify show on_help: ' <white>/uclan verify <tag> <white>-<white> Verificar un clan'
+  uclan verify show on_help_json hover_text: <white>Click para verificar un Clan
+  uclan verify show on_success: '%tag% <white>Has activado la verificación del clan!'
+  uclan verify show on_error: '<red><bold>ERROR <dark_gray>» <white>white al comprobar el clan'
+  uclan verify show on_usage: '%tag% <white>Usa <white>/uclan verify <etiqueta>'
+  uclan reload show on_help: ' <white>/uclan reload <white>-<white> Recargar el complemento'
+  uclan reload show on_help_json hover_text: <white>Click para recargar las configuraciones del complemento
+  uclan reload show on_success: '%tag% <white>El complemento se recargó correctamente <white>(%time%)<white>'
+  uclan reload show on_error: '<red><bold>ERROR <dark_gray>» <white>white al volver a cargar la configuración'
+  uclan reload show on_usage: '%tag% <white>Usa <white>/uclan reload'
+  uclan reloadaddons show on_help: ' <white>/uclan reloadaddons <white>-<white> Recargar los complementos'
+  uclan reloadaddons show on_help_json hover_text: <white>Click para recargar complementos
+  uclan reloadaddons show on_success: '%tag% <white>Los complementos se han recargado correctamente! <white>(%time%)<white>'
+  uclan reloadaddons show on_error: '<red><bold>ERROR <dark_gray>» <white>white al recargar complementos'
+  uclan reloadaddons show on_usage: '%tag% <white>Usa <white>/uclan reloadaddons'
+  uclan exportdata show on_help: ' <white>/uclan exportdata <white><MYSQL|SQLITE|YAML> <white>-<white> Exportar clan datos'
+  uclan exportdata show on_help_json hover_text: <white>Haga click para exportar datos
+  uclan exportdata show on_success: '%tag% <white>Se inició la exportación de datos, puede seguir el progreso a continuaci�n'
+  uclan exportdata show on_error: '<red><bold>ERROR <dark_gray>» <white>white al exportar datos'
+  uclan exportdata show on_usage: '%tag% <white>Use <white>/uclan exportdata <white><MYSQL|SQLITE|YAML>'
+  clan ban show on_help: ' <white>/clan ban <white><nickname> <white>-<white> Banear a un jugador'
+  clan ban show on_help_json hover_text: <white>Click para banear a un jugador
+  clan ban show on_success: '%tag% <white>El jugador ha sido baneado con éxito'
+  clan ban show on_error: '<red><bold>ERROR <dark_gray>» <white>Hubo un white al banear al jugador'
+  clan ban show on_usage: '%tag% <white>Use <white>/clan ban <nickname>'
+  clan unban show on_help: ' <white>/clan unban <white><nickname> <white>-<white> Unnan a player'
+  clan unban show on_help_json hover_text: <white>Click para desbanear a un jugador
+  clan unban show on_success: '%tag% <white>El jugador ha sido desbaneado con éxito'
+  clan unban show on_error: '<red><bold>ERROR <dark_gray>» <white>Hubo un white al desbanear al jugador'
+  clan unban show on_usage: '%tag% <white>Use <white>/clan unban <nickname>'
+  clan nickname show on_help: ' <white>/clan nickname <white><nickname> <white>-<white> Change clan nickname'
+  clan nickname show on_help_json hover_text: <white>Click para cambiar el nick
+  clan nickname show on_success: '%tag% <white>Se ha cambiado correctamente el nick'
+  clan nickname show on_error: '<red><bold>ERROR <dark_gray>» <white>Hubo un white al cambiar el apodo'
+  clan nickname show on_usage: '%tag% <white>Use <white>/clan nickname <white><nickname>'
+ 
+ 
+ # TRANSLATIONS OF THE CHAT ACTIONS
+ 
+CHAT:
+  changenickname:
+    message:
+    - ' '
+    - <white><strikethrough>-<white><strikethrough>---------------------------------------------<white><strikethrough>-
+    - <red><bold>!</bold> <white>Escriba su apodo temporal en el chat, debe contener solo letras y números
+    - ' <white>- Usa <white>/clan cancelar</red> <white>o <click:run_command:"/clan cancel"><hover:show_text:"<white>Click para cancelarwhite"><white>[CLICK AQUI]</red></hover></click> para cancelar'
+    - <white><strikethrough>-<white><strikethrough>---------------------------------------------<white><strikethrough>-
+    - ' '
+    actionbar: <red><bold>!</bold> <white>¡Escriba su apodo temporal en el chat!
+    title:
+      line: <white>! <white>Nick
+      subline: <white>Escriba en el chat!
+    bossbar: <red><bold>!</bold> <white>¡Escriba su apodo en el chat! <white>({time})
+  commandunknownplayer:
+    message:
+    - '%tag% <white>Comando desconocido, <white><click:run_command:"/clan help"><hover:show_text:"<white>Click aquí para ver Ayudawhite"><white>[CLICK AQUI]</red></hover></click> <white>o use <white>/clan help <white>para ver la lista de comandos disponibles'
+    actionbar: <white>/clan help <white>para ver los comandos disponibles
+    title:
+      line: <white>! <white>/clan help
+      subline: <white>Para ver comandos!
+    bossbar: <white>/clan help <white>para ver los comandos disponibleswhite <white>({time})
+  commandunknownadmin:
+    message:
+    - '%tag% <white>Comando desconocido, <white><click:run_command:"/uclan help"><hover:show_text:"<white>Click aquí para ver Ayudawhite"><white>[CLICK AQUI]</red></hover></click> <white>or use <white>/uclan help <white>para ver la lista de comandos disponibles'
+    actionbar: <white>/uclan help <white>para ver los comandos disponibles
+    title:
+      line: <white>! <white>/uclan help
+      subline: <white>Para ver comandos!
+    bossbar: <white>/uclan help <white>para ver los comandos disponibleswhite <white>({time})
+  clanlevelreceived:
+    message:
+    - '%tag% <white>El Clan <white>%clan% <white>ahora está en el nivel <white>%num%'
+    actionbar: <white> El Clan <white>%clan% <white>ahora está al nivel <white>%num%
+    title:
+      line: <white>+ Level
+      subline: <white>%clan%
+    bossbar: <white>El Clan <white>%clan% <white>ahora está al nivel <white>%num% <white>({time})
+  clanrewardlevel:
+    message:
+    - '%tag% <white>Obtuviste recompensas por alcanzar el nivel de tu clan <white>%num%'
+    actionbar: ''
+    title:
+      line: ''
+      subline: ''
+    bossbar: ''
+  clanhomecreate:
+    message:
+    - ' '
+    - <white><strikethrough>-<white><strikethrough>---------------------------------------------<white><strikethrough>-
+    - <red><bold>!</bold> <white>Escribe en el chat el nombre del nuevo <white> Home de Clan<white>
+    - ' <white>- Usa <white>/clan cancelar</red> <white>o <click:run_command:"/clan cancel"><hover:show_text:"<white>Click para cancelarwhite"><white>[CLICK AQUI]</red></hover></click> para cancelar'
+    - <white><strikethrough>-<white><strikethrough>---------------------------------------------<white><strikethrough>-
+    - ' '
+    actionbar: <red><bold>!</bold> <white>¡Escribe tu nueva casa de clan en el chat!
+    title:
+      line: <white>! <white>Nuevo Home
+      subline: <white>Escribe en el chat!
+    bossbar: <red><bold>!</bold> <white>¡Escribe tu nueva casa de clan en el chat! <white>({time})
+  clancreate:
+    message:
+    - ' '
+    - <white><strikethrough>-<white><strikethrough>---------------------------------------------<white><strikethrough>-
+    - <red><bold>!</bold> <white>Escribe en el chat el Tag del <white> Nuevo Clan<white> que deseas crear <white>
+    - ' <white>- Usa <white>/clan cancelar</red> <white>o <click:run_command:"/clan cancel"><hover:show_text:"<white>Click para cancelarwhite"><white>[CLICK AQUI]</red></hover></click> para cancelar'
+    - <white><strikethrough>-<white><strikethrough>---------------------------------------------<white><strikethrough>-
+    - ' '
+    actionbar: <red><bold>!</bold> <white>¡Escribe el Tag de tu nuevo clan en el chat!
+    title:
+      line: <white>! <white>Nuevo Clan
+      subline: <white>Escribe en el chat!
+    bossbar: <red><bold>!</bold> <white>Escribe la etiqueta en el chat! <white>({time})
+  clanmodtag:
+    message:
+    - ' '
+    - <white><strikethrough>-<white><strikethrough>---------------------------------------------<white><strikethrough>-
+    - <red><bold>!</bold> <white>Write in the chat the <whit> New Tag<white> of the clan <white>
+    - ' <white>- Usa <white>/clan cancelar</red> <white>or <click:run_command:"/clan cancel"><hover:show_text:"<white>Click para cancelarwhite"><white>[CLICK AQUI]</red></hover></click> to cancel'
+    - <white><strikethrough>-<white><strikethrough>---------------------------------------------<white><strikethrough>-
+    - ' '
+    actionbar: <red><bold>!</bold> <white>Write the new tag of the clan in the chat!
+    title:
+      line: <white>! <white>New Tag
+      subline: <white>Write in the chat!
+    bossbar: <red><bold>!</bold> <white>Write the new tag in the chat! <white>({time})
+  clandesc:
+    message:
+    - ' '
+    - <white><strikethrough>-<white><strikethrough>---------------------------------------------<white><strikethrough>-
+    - <red><bold>!</bold> <white>Write in the chat the <white> New Description<white> of the clan <white>
+    - ' <white>- Usa <white>/clan cancelar</red> <white>o <click:run_command:"/clan cancel"><hover:show_text:"<white>Click para cancelarwhite"><white>[CLICK AQUI]</red></hover></click> para cancelar'
+    - <white><strikethrough>-<white><strikethrough>---------------------------------------------<white><strikethrough>-
+    - ' '
+    actionbar: <red><bold>!</bold> <white>Write the new tag of the clan in the chat!
+    title:
+      line: <white>! <white>New Description
+      subline: <white>Write in the chat!
+    bossbar: <red><bold>!</bold> <white>Write the new description in the chat! <white>({time})
+  invitereceive:
+    message:
+    - ' '
+    - <white><strikethrough>-<white><strikethrough>---------------------------------------------<white><strikethrough>-
+    - <white>! <white>Invitation received to join Clan <white>%clan_tag%
+    - <white>! <white>Expires in <white>%sec_expires% sec<white>
+    - <click:run_command:"/clan join %clan_tag_nocolor%"><hover:show_text:"<white>Click para aceptar, o usa <white/clan join %clan_tag_nocolor%white"><white>[ACEPTAR]</white></hover></click>      <click:run_command:"/clan deny %clan_tag_nocolor%"><hover:show_text:"<white>Click para denegar, o usa <white/clan deny %clan_tag_nocolor%white"><white>[DENEGAR]</red></hover></click>
+    - <white><strikethrough>-<white><strikethrough>---------------------------------------------<white><strikethrough>-
+    - ' '
+    actionbar: <red><bold>!</bold> <white>Invitacion recibida del clan <white>%clan_tag%
+    title:
+      line: <white>! <white>Nueva invitacion
+      subline: <white>Clan <white>%clan_tag%
+    bossbar: <red><bold>!</bold> <white>Invitacion recibida del clan <white>%clan_tag% <white>({time})
+  clanhomedelete:
+    message:
+    - ' '
+    - <white><strikethrough>-<white><strikethrough>---------------------------------------------<white><strikethrough>-
+    - <white>! <white>Write in the chat the <white> name of the home<white> to delete
+    - ' <white>- Usa <white>/clan cancelar</red> <white>o <click:run_command:"/clan cancel"><hover:show_text:"<white>Click para cancelarwhite"><white>[CLICK AQUI]</red></hover></click> para cancelar'
+    - <white><strikethrough>-<white><strikethrough>---------------------------------------------<white><strikethrough>-
+    - ' '
+    actionbar: <red><bold>!</bold> <white>Escribe el nombre del hogar para eliminar
+    title:
+      line: <white>! <white>Borrar hogar
+      subline: <white>Escribe en el chat!
+    bossbar: <red><bold>!</bold> <white>Escribe el nombre del hogar para borrar! <white>({time})
+  clanregroupreceive:
+    message:
+    - ' '
+    - <white><strikethrough>-<white><strikethrough>---------------------------------------------<white><strikethrough>-
+    - <white>! <white>Regroup request received! <white>%clan_sender%
+    - <white>! <white>Expires in <white>%sec_expires% sec<white>
+    - <click:run_command:"/clan regroup accept"><hover:show_text:"<white>Click to accept, or use <white/clan regroup acceptwhite"><white>[ACCEPT]</white></hover></click>
+    - <white><strikethrough>-<white><strikethrough>---------------------------------------------<white><strikethrough>-
+    - ' '
+    actionbar: <red><bold>!</bold> <white>Regroup request received!
+    title:
+      line: <white>! <white>Regroup request
+      subline: <white>Accept or ignore?
+    bossbar: <red><bold>!</bold> <white>Regroup request received! <white>({time})
+  claninvite:
+    message:
+    - ' '
+    - <white><strikethrough>-<white><strikethrough>---------------------------------------------<white><strikethrough>-
+    - <white>! <white>Escribe en el chat a quien quieres invitar al clan
+    - ' <white>- Usa <white>/clan cancelar</red> <white>o <click:run_command:"/clan cancel"><hover:show_text:"<white>Click para cancelarwhite"><white>[CLICK AQUI]</red></hover></click> para cancelar'
+    - <white><strikethrough>-<white><strikethrough>---------------------------------------------<white><strikethrough>-
+    - ' '
+    actionbar: <red><bold>!</bold> <white>>Escribe en el chat a quien quieres invitar!
+    title:
+      line: <white>! <white>Nueva invitacion
+      subline: <white>Escribe en el chat
+    bossbar: <red><bold>!</bold> <white>Escribe en el chat a quien quieres invitar! <white>({time})
+  clanrivalremove:
+    message:
+    - ' '
+    - <white><strikethrough>-<white><strikethrough>---------------------------------------------<white><strikethrough>-
+    - <white>! <white>El clan <white>%clan_tag% <white>te ha enviado una solicitud de paz
+    - <white>! <white>Expira en <white>%sec_expires% segundos<white>
+    - <click:run_command:"/clan rival accept %clan_tag_nocolor%"><hover:show_text:"<white>Click para aceptar, o usa <white/clan rival accept %clan_tag_nocolor%white"><white>[ACEPTAR]</white></hover></click>      <click:run_command:"/clan rival deny %clan_tag_nocolor%"><hover:show_text:"<white>Click para denegar, o usa <white/clan rival deny %clan_tag_nocolor%"><white>[DENEGAR]</red></hover></click>
+    - <white><strikethrough>-<white><strikethrough>---------------------------------------------<white><strikethrough>-
+    - ' '
+    actionbar: <red><bold>!</bold> <white>>Solicitud de paz enviada!
+    title:
+      line: <white>! <white>Solicitud de paz
+      subline: <white>¿Aceptar o denegar?
+    bossbar: <red><bold>!</bold> <white>Solicitud de paz recibida! <white>({time})
+  clanallyreceive:
+    message:
+    - ' '
+    - <white><strikethrough>-<white><strikethrough>---------------------------------------------<white><strikethrough>-
+    - <white>! <white>Solicitud de alianza recibida del clan <white>%clan_tag%
+    - <white>! <white>Expira en <white>%sec_expires% segundos<white>
+    - <click:run_command:"/clan ally accept %clan_tag_nocolor%"><hover:show_text:"<white>Click para aceptar, o usa <white/clan ally accept %clan_tag_nocolor%"><white>[ACCEPTAR]</white></hover></click>      <click:run_command:"/clan ally deny %clan_tag_nocolor%"><hover:show_text:"<white>Click para denegar, o usa <white/clan ally deny %clan_tag_nocolor%"><white>[DENEGAR]</red></hover></click>
+    - <white><strikethrough>-<white><strikethrough>---------------------------------------------<white><strikethrough>-
+    - ' '
+    actionbar: <red><bold>!</bold> <white>>Solicitud de alianza recibida
+    title:
+      line: <white>! <white>Solicitud de alianza recibida
+      subline: <white>¿Aceptar o denegar?
+    bossbar: <red><bold>!</bold> <white>Solicitud de alianza recibida <white>({time})
